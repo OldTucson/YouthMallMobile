@@ -1,0 +1,1372 @@
+body,ul,li {
+   padding:0;
+   margin:0;
+   border:0;
+}
+body {
+   font-size:12px;
+   -webkit-user-select:none;
+   -webkit-text-size-adjust:none;
+   font-family:helvetica;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+a{
+    color: #000;
+    outline: none;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+button{
+    border: 0;
+    outline: 0;
+}
+input{
+    font-size: 100%;
+    margin: 0;
+}
+.font{
+	font-size: .7rem;
+}
+.display{
+    display: none;
+}
+.wrap{
+	/*margin-left: auto;
+    margin-right: auto;*/
+    margin:0 auto;
+    width: 18.75rem;
+    overflow: hidden;
+}
+.top-downloadbar{
+    display: block;
+    height: 2.25rem;
+    background: rgba(68,68,68,.95);
+    width: 18.75rem;
+    padding: .125rem 0;
+    position: relative;
+    box-sizing: content-box;
+}
+.download-close{
+    margin-left: .25rem;
+    width: .7rem;
+    height: .7rem;
+    background-image: url(../img/logo_icon/ymHome-19.png);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: cover;
+}
+.download-icon{
+    width: 2rem;
+    height: 2rem;
+    left: 1.25rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: cover;
+    background-image: url(../img/logo_icon/downloadIcon.png);  
+} 
+.download-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    left: 3.5rem;
+    color: #fff;
+    font-size: .6rem;    
+} 
+.download-text-desc{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10%) scale(.5);
+    transform-origin: left center;
+    left: 3.5rem;
+    color: #c7c7c7;
+    font-size: 1rem;    
+}
+.download-go{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .6rem;
+    padding: 0 .375rem;
+    height: 1.125rem;
+    line-height: 1.125rem;
+    border-radius: .125rem;
+    color: #fff;
+    text-decoration: none; 
+    right: .375rem;
+    background: red;   
+}
+/*header*/
+.header{
+	background-color: #434343;
+    color: #fff;
+    height: 2.625rem;
+    line-height: 2.625rem;
+    width: 18.75rem;
+    position: relative;
+}
+.header .nav-back,.header .nav-home{
+	position: absolute;
+	height: 2.625rem;
+    line-height: 2.625rem;
+    width: 2.625rem;
+    color: #fff;
+    display: block;
+    font-size: 0.9rem;
+    outline: none;
+    text-align: center;
+    top: 0;
+}
+.header .nav-home{
+	height: 2.625rem;
+    line-height: 2.625rem;
+    right: 0;
+    width: 2.625rem;
+}  
+.header .header-title{
+	font-size: 1.05rem;
+    font-weight: 400;
+    margin-left: 2.925rem;
+    margin-right: 2.925rem;
+    text-align: center;
+}
+.header .header-nav{
+	background-size: 100% 100%;
+    color: #fff;
+    height: 8.875rem;
+    overflow: hidden;
+    padding-top: .425rem;
+    position: absolute;
+    right: .3rem;
+    top: 2.325rem;
+    width: 7rem;
+    z-index: 2;
+}
+.header .header-nav .nav-arr{
+    background-color: #434343;
+    height: .75rem;
+    position: absolute;
+    right: .8rem;
+    top: .1rem;
+    transform: rotate(45deg);
+    width: .75rem;	
+}
+.header-nav ul{
+	background-image: linear-gradient(#434343,#171717);
+	border-radius: .25rem;
+    height: 8.45rem;
+    overflow: hidden;
+    padding: 1px 0;
+    width: 100%;
+}
+.header-nav ul li{
+	float: left;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    overflow: hidden;
+    padding-left: 1rem;
+    width: 100%;
+}
+.header-nav ul li i{
+	color: #fff;
+    display: block;
+    float: left;
+    font-size: .75rem;
+    width: 1.75rem;
+}
+.header-nav ul li span{
+	border-bottom: 1px solid #444;
+	color: #fff;
+    display: block;
+    float: left;
+    font-size: .7rem;
+    height: 2.1rem;
+    padding-left: .5rem;
+    width: 4.25rem;
+}
+/*main*/
+.main{
+    background-color: #f0f0f0;
+    width: 18.75rem;	
+}
+.main-head{
+    background-image: url(../img/logo_icon/ymHome-01.jpg);
+    background-size: cover;
+    height: 2.5rem;
+    padding: 1.15rem 0.75rem 1.45rem;
+    position: relative;
+}
+.main-head .left{
+	float: left;
+    height: 2.5rem;
+    position: relative;
+    width: 2.5rem;
+}
+.main-head .left .user-avatar{
+    background-image: url(../img/logo_icon/ymHome-01.png);
+    background-position: 50%;
+    background-size: cover;
+    border: .075rem solid #fff;
+    border-radius: 50%;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;	
+}
+.main-head .right{
+	color: #fff;
+    float: left;
+    height: 2.5rem;
+    margin-left: .5rem;
+    width: 11.25rem;
+    position: relative;
+}
+.right .name{
+    position: relative;
+    top: 0.4rem;
+}
+.main-head .qrcode{
+    color: #fff;
+    display: block;
+    font-size: .925rem;
+    height: .925rem;
+    position: absolute;
+    right: .75rem;
+    top: .5rem;
+    width: .925rem;	
+}
+.main-head .family-entry{
+    background-image: url(../img/logo_icon/ymHome-01.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    display: block;
+    height: 3.4rem;
+    position: absolute;
+    right: 0;
+    width: 3.4rem;    
+}
+/*list*/
+.main .list{
+    background-color: #fff;
+    clear: both;
+    margin-bottom: .5rem;
+    width: 18.75rem;
+}
+.s-list .list-item{
+    height: 2rem;
+    line-height: 2rem;    
+}
+.list .list-item{
+    display: block;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    padding: 0 0 0 .75rem;
+    width: 18rem;    
+}
+.list .list-item .zuo{
+    font-size: .8rem;
+    width: 9rem;
+    color: #444;
+    float: left;
+}
+.list .list-item .zh{
+    text-align: right;
+    width: 7.5rem;
+    display: inline-block;
+}
+.list .list-item .you{
+    color: #e0e0e0;
+    font-size: .8rem;
+    /*margin-right: .75rem;*/
+    text-align: right;
+    width: .75rem;
+    display: inline-block;
+}
+.notice-c{
+    background-color: #fff;
+    height: 2rem;
+    line-height: 2rem;
+    margin-bottom: .5rem;
+    padding: 0 .75rem;
+}
+.hide{
+    display: block;
+}
+.notice-c .title{
+    color: #444;
+    float: left;
+    font-size: 0;
+    line-height: 0;
+    width: 3.5rem;
+}
+.notice-c .title span{
+    display: inline-block;
+    font-size: .7rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin: .5rem 0;
+}
+.notice-c .title .red{
+    border-right: 1px solid #e0e0e0;
+    color: #df1b24;
+    padding-right: .5rem;
+}
+.notice-c .main{
+    color: #444;
+    float: left;
+    font-size: .6rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: .45rem;
+    width: 13.25rem;
+} 
+.notice-c .eps{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color:white;
+}
+.service{
+    background-color: #fff;
+    float: left;
+    margin-bottom: .5rem;
+    margin-top: -.5rem;    
+}
+.service-item{
+    border-top: 1px solid #e0e0e0;
+    color: #444;
+    float: left;
+    height: 2.625rem;
+    padding: .5rem 1.625rem;
+    position: relative;
+    text-align: center;
+    width: 3rem;    
+}
+.service-item .pic{
+    font-size: 1.25rem;
+    height: 1.375rem;
+    line-height: 1.125rem;
+    padding-top: .25rem;    
+}
+.service-item .na{
+    color: #444;
+    font-size: .6rem;
+    height: 1.375rem;
+    line-height: 1.375rem;
+}
+.service-item .num{
+    font-size: .75rem;
+    height: 1.25rem;
+    line-height: 1.25rem;    
+}
+.list .list-item{
+    display: block;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    padding: 0 0 0 .75rem;
+    width: 18rem;
+}
+.list .list-item .pic{
+    font-size: 1.125rem;
+    width: 1.5rem;
+    float: left;
+}
+.list .list-item .body{
+    border-bottom: 1px solid #e0e0e0;
+    width: 16.5rem;
+    display: inline-block;
+}
+.list .list-item .body .mai{
+    width: 10rem;
+}
+.list .list-item .body div{
+    color: #444;
+    float: left;
+    font-size: .7rem;
+    height: 2.2rem;
+}
+.list .list-item .body .value{
+    text-align: right;
+    width: 5rem;  
+}
+.list .list-item .body .arr{
+    color: #e0e0e0;
+    font-size: .8rem;
+    margin-right: .75rem;
+    text-align: right;
+    width: .75rem;
+}
+.ad-pic img{
+    height: auto;
+    width: 18.75rem;
+}
+.ad-pic img:nth-child(2){
+    margin-top: 0.5rem;
+}
+/*基本资料*/
+.personal-details{
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #e0e0e0;
+    height: auto;
+    margin-top: .5rem;
+    overflow: hidden;
+    width: 100%;    
+}
+.personal-details ul{
+    background: #fff;
+    float: right;
+    height: auto;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    padding-left: 6%;
+    width: 94%;
+}
+.personal-details ul li{
+    border-bottom: 1px solid #e0e0e0;
+    height: 2rem;
+}
+.personal-details ul li>span{
+    float: left;
+    font-size: .8rem;
+    height: 100%;
+    line-height: 2rem;
+    margin-right: 8%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 42%;
+}
+.personal-details ul li>span:last-of-type {
+    color: #b0b0b0;
+    text-align: right;
+}
+.personal-details ul:first-child li:first-of-type {
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+.personal-details .user-avatar{
+    background-image: url(../img/logo_icon/ymHome-01.png);
+    background-size: 100%;
+}
+.personal-details .head-portrait{
+    border: 1px solid #eee;
+    border-radius: 50%;
+    float: right;
+    height: 2.25rem;
+    overflow: hidden;
+    width: 2.25rem;
+}
+.tap-hightlight{
+}
+.grade{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;   
+    color: #b0b0b0; 
+}
+.grade i{
+    background-size: 100%;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    line-height: 2.2rem;
+    width: 1.8rem;
+}
+.personal-details ul li>span .grade span {
+    color: #b0b0b0;
+}
+.personal-details ul:last-child {
+    margin-bottom: 0;
+}
+/*我的订单*/
+.order-page{
+    background: #f0f0f0;
+}
+.order-page .fraud-tip{
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    display: block;
+    margin-bottom: .5rem;
+    padding: .5rem .75rem;
+}
+.fraud-tip .iconfont{
+    color: #b0b0b0;
+    display: block;
+    float: right;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    text-align: right;
+    width: .75rem;
+}
+.fraud-tip .tip-title{
+    background-image: url(../img/logo_icon/ymHome-02.png);
+    background-repeat: no-repeat;
+    background-size: auto 97%;
+    color: #444;
+    display: block;
+    font-size: .6rem;
+    height: .65rem;
+    line-height: .65rem;
+    padding-left: .9rem;
+}
+.fraud-tip .tip-content{
+    color: #b0b0b0;
+    display: inline-block;
+    font-size: .55rem;
+    margin-top: .4rem;
+    width: 94%;    
+}
+.order-page .order-nav{
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    color: #b0b0b0;
+}
+.order-nav{
+    height: 2.25rem;
+}
+.order-nav>li{
+    float: left;
+    font-size: .65rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    text-align: center;
+    width: 25%;    
+}
+.order-nav .active{
+    color: black;
+}
+.no-order{
+    background: #fff;
+    padding-top: 1rem;
+    text-align: center;
+    width: 100%;    
+}
+.no-order .icon{
+    background: url(../img/logo_icon/ymHome-03.png) no-repeat;
+    background-size: 100%;
+    height: 4.9rem;
+    margin: 0 auto;
+    width: 3.825rem;    
+}
+.no-order span{
+    color: #444;
+    display: block;
+    font-size: .6rem;
+    margin: .75rem 0 2rem;    
+}
+.no-order .walk-way{
+    background: #444;
+    border-radius: 5PX;
+    color: #fff;
+    display: block;
+    font-size: .75rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+/*默认购物频道*/
+.family-heade{
+    background: linear-gradient(#46ba8e,#67c7c0);
+    padding-bottom: 1.25rem;
+}
+.family-heade .header-top{
+    color: #fff;
+    height: 3.15rem;
+    line-height: 2.4rem;
+    padding: .85rem .75rem 0;
+}
+.header-top .back{
+    background-image: url(../img/logo_icon/ymHome-05.png);
+    background-repeat: no-repeat;
+    background-size: 40% 70%;
+    display: block;
+    float: left;
+    height: 1.5rem;
+    margin-top: .25rem;
+    width: 1.5rem;    
+}
+.header-top .headings{
+    background-image: url(../img/logo_icon/ymHome-04.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 1.25rem;
+    margin-left: 6.25rem;
+    width: 2.175rem;
+}
+.person-detail{
+    color: #fff;
+    height: 4rem;
+    padding-left: 1rem;
+    vertical-align: bottom;    
+}
+.person-detail .user-avatar{
+    background-image: url(../img/logo_icon/ymHome-06.png);
+    background-size: 100%;
+    border-radius: 50%;
+    float: left;
+    height: 4rem;
+    margin-right: .75rem;
+    overflow: hidden;
+    position: relative;
+    width: 4rem;   
+}
+.person-detail .basic-info{
+    line-height: 1.375rem;    
+}
+.basic-info .name{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 1.375rem;
+    line-height: 1.375rem;
+    max-width: 9rem;
+    overflow: hidden;
+    padding-right: .35rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.basic-info .gender{
+    background-size: 100% 100%;
+    display: inline-block;
+    height: .95rem;
+    width: .725rem;    
+}
+.invition{
+    font-size: .75rem;
+    margin-top: .75rem;    
+}
+.invition .trend-code{
+    display: inline-block;
+    line-height: 1rem;
+    vertical-align: top;
+}
+.trend-code .word-outer{
+    display: inline-block;
+    height: 1rem;
+    max-width: 3.9rem;
+    overflow: hidden;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.word-outer .trend-word{
+    display: inline-block;
+    height: 1rem;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.code-set{
+    background-image: url(../img/logo_icon/ymHome-07.png);
+    background-repeat: no-repeat;
+    background-size: 100% 93%;
+    display: inline-block;
+    height: 1.1rem;
+    margin-left: .125rem;
+    width: 1rem;    
+}
+.code-tip{
+    background-image: url(../img/logo_icon/ymHome-08.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: .9rem;
+    margin-left: .325rem;
+    margin-top: .05rem;
+    vertical-align: top;
+    width: 3.125rem;    
+}
+.vip-grade{
+    background-color: #fff;
+}
+.vip-grade .title{
+    background-color: #fff;
+    color: #1a1a1a;
+    display: inline-block;
+    font-size: .85rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: .75rem;
+    width: 18rem;    
+}
+.vip-grade .grade-content{
+    overflow: hidden;
+    width: 100%;    
+}
+.grade-content .content-item{
+    float: left;
+    height: 6rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    width: 6.25rem;    
+}
+.grade-content .content-item .item-tag{
+    border-radius: .5rem;
+    height: 3.5rem;
+    margin-bottom: .3rem;
+    overflow: hidden;
+    width: 3.5rem;    
+}
+.grade-content .content-item .item{
+    color: #43b938;
+    display: block;
+    font-size: .7rem;
+    line-height: 1.15rem;    
+}
+.grade-content .content-item .level{
+    color: #b0b0b0;
+    display: block;
+    font-size: .6rem;
+}
+.integral-total{
+    border-radius: .975rem;
+    display: block;
+    left: -6.6rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    top: 2.75rem;
+    width: 4.5rem;    
+}
+.integral-total .total-a{
+    color: #43b989;
+    font-size: 1.375rem;    
+}
+.integral-total .total-b{
+    display: inline-block;
+    font-size: .6rem;
+    width: 100%;
+}
+.integral{
+    margin: .75rem 0;
+}
+.integral .title{
+    background-color: #fff;
+    color: #1a1a1a;
+    display: inline-block;
+    font-size: .85rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: .75rem;
+    width: 100%;    
+}
+.integral .integral-content{
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    padding-left: .75rem;
+    position: relative;    
+}
+.integral-content .charts{
+    width: 8.6rem;
+    height: 8.6rem;
+    user-select: none;  
+    float: left;  
+}
+.integral-content .mark{
+    font-size: .6rem;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    width: 8.75rem; 
+}
+.mark .mark-item{
+    color: #000;
+    display: inline-block;
+    line-height: 1rem;
+    margin-left: 1rem;
+    width: 100%;    
+}
+.mark .item-name{
+    display: inline-block;
+    margin-right: .55rem;
+    text-align: right;
+    width: 3rem;    
+}
+.mark .item-color{
+    border-radius: .25rem;
+    display: inline-block;
+    height: .5rem;
+    margin-right: .55rem;
+    width: .5rem;    
+}
+.mark .instruction{
+    color: #b0b0b0;
+    display: inline-block;
+    line-height: .8rem;
+    margin-top: .25rem;
+    width: 100%;    
+}
+.mark .instruction span{
+    float: right;
+    width: 83%;    
+}
+.resource-own{
+    margin-bottom: .5rem;    
+}
+.resource-own img{
+    width: 18.75rem;
+}
+.swiper-slide img{
+    width: 18.75rem;
+}
+/*优惠券*/
+.filter-box{
+    background-color: #fff;
+    box-shadow: 0 0 0.4rem 0 #eee;
+    display: flex;
+    height: 1.5rem;
+    left: 0;
+    padding: .35rem 0;
+    top: 2.65rem;
+    width: 18.75rem;
+    z-index: 3;    
+}
+.filter-btn-box{
+    border-right: 1px solid #e0e0e0;
+    color: #b0b0b0;
+    flex: 1;
+    line-height: 1.5rem;
+    text-align: center;    
+}
+.active{
+    color: black;
+}
+.exchange-box{
+    background-color: #fff;
+    height: 2.25rem;
+    left: 0;
+    padding: .4rem .5rem;
+    /*position: fixed;*/
+    top: 4.85rem;
+    z-index: 2;    
+}
+.exchange-box input{
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: .1rem;
+    height: 1.5rem;
+    margin-right: .25rem;
+    padding: 0 .5rem;
+    width: 13.25rem;   
+}
+.exchange-coupon-btn{
+    background-color: #b0b0b0;
+    border-radius: .1rem;
+    color: #fff;
+    font-size: .7rem;
+    height: 1.5rem;
+    width: 3rem;    
+}
+.coupon-list{
+    padding: .5rem;   
+}
+.w{
+    background-color: #f0f0f0;
+    height: 35rem;
+}
+.coupon-list .coupon-section{
+    margin-bottom: .5rem;
+}
+.coupon-section .coupon{
+    height: 5rem;
+    position: relative;
+    width: 17.75rem;
+    background: url(../img/logo_icon/ymHome-17.png) no-repeat;
+}
+.coupon-left{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 5rem;
+    justify-content: center;
+    width: 5rem;
+}
+.value{
+    color: #fc5960;
+    font-size: .6rem;
+    text-align: center;
+}
+.value span{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.threshold{
+    color: #fc5960;
+    font-size: .6rem; 
+    text-align: center; 
+    padding-left: 0.5rem;  
+}
+.coupon-right{
+    background-color: #fff;
+    border-bottom-right-radius: .2rem;
+    border-top-right-radius: .2rem;
+    color: #b0b0b0;
+    float: right;
+    font-size: .55rem;
+    height: 3.9rem;
+    padding: .55rem;
+    position: relative;
+    width: 11.65rem;    
+}
+.coupon-right .title{
+    color: #444;
+    display: -webkit-box;
+    font-size: .6rem;
+    overflow: hidden;
+    width: 9.25rem;
+}
+.coupon-right .title span{
+    color: #fc5960;
+}
+.coupon-right .time{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.coupon-right .use-intro{
+    bottom: .55rem;
+    position: absolute;
+}
+.coupon .use-now{
+    background-color: #fff;
+    border: 1px solid #444;
+    border-radius: .625rem;
+    bottom: .5rem;
+    color: #444;
+    font-size: .55rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    position: absolute;
+    right: .5rem;
+    text-align: center;
+    width: 3.25rem;    
+}
+.no-conpon-now{
+    color: #b0b0b0;
+    padding-top: 6.55rem;
+    text-align: center;
+}
+.no-conpon-now .icon-not{
+    background-image: url(../img/logo_icon/ymHome-18.png);
+    background-size: 100% 100%;
+    height: 3.25rem;
+    margin: auto auto .75rem;
+    width: 5.2rem;    
+}
+.no-conpon-now p{
+    font-size: .7rem;    
+}
+/*有货币*/
+.yoho-coin-new-page{
+    background-color: #f0f0f0;
+    margin-top: .75rem;    
+}
+.yoho-coin-new-page .coin{
+    background-color: #fff;
+    text-align: center;
+}
+.yoho-coin-new-page .coin-num{
+    color: #d0021b;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.2rem;    
+}
+.yoho-coin-new-page .info{
+    color: #b0b0b0;
+    font-size: .6rem;
+    line-height: 1rem;
+    width: auto;
+}
+.yoho-coin-new-page .info .dollar{
+    background: url(../img/logo_icon/ymHome-21.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: .55rem;
+    width: .55rem;    
+}
+.yoho-coin-new-page .more{
+    border: 1px solid #444;
+    border-radius: .55rem;
+    color: #444;
+    display: inline-block;
+    font-size: .7rem;
+    height: 1.05rem;
+    line-height: 1.1rem;
+    margin: .5rem 0 .75rem;
+    text-align: center;
+    width: 4.2rem;    
+}
+/*我的消息*/
+.massage-page{
+    margin-top: .4rem;
+    padding-bottom: .6rem;
+}
+.massage-list{
+    border-bottom: 1px solid #f8f8f8;
+    overflow: hidden;
+    padding: .3rem 2.5rem .3rem .6rem;
+    position: relative;
+}
+.massage-list strong{
+    background: red;
+    border-radius: 50%;
+    height: .2rem;
+    left: .25rem;
+    position: absolute;
+    top: .6rem;
+    width: .2rem;    
+    font-weight: 700;
+}
+.massage-list p{
+    color: #222;
+    font-size: .7rem;
+}
+.massage-list span{
+    color: #999;
+    font-size: .6rem;    
+}
+.massage-list i{
+    color: #ccc;
+    position: absolute;
+    right: 1.2rem;
+    top: .6rem;
+    font-family: iconfont,sans-serif!important;
+    font-size: .8rem;
+    font-style: normal;
+    text-decoration: none;
+}
+.dialog-wrapper{
+    background: rgba(0,0,0,.5);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.dialog-wrapper .dialog-box{
+    background: hsla(0,0%,100%,.84);
+    border-radius: .5rem;
+    color: #000;
+    font-size: .75rem;
+    left: 50%;
+    margin-left: -6.75rem;
+    position: absolute;
+    text-align: center;
+    width: 13.5rem;    
+}
+.dialog-wrapper .dialog-content{
+    font-size: .8rem;
+    padding: 1.5rem .75rem;    
+}
+.dialog-wrapper .dialog-footer{
+    height: 2.2rem;
+    line-height: 2.2rem;    
+    border-top: 1px solid #ccc;
+}
+.dialog-wrapper .dialog-footer>span {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+.dialog-wrapper .dialog-footer>span:last-of-type {
+    border-left: 1px solid #ccc;
+    color: #d0021b;
+}
+.dialog-wrapper .dialog-footer>span {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+/*我的二维码*/
+.new-qrcode-c{
+    overflow: hidden;
+    position: relative;
+    width: 18.75rem;  
+    background-color: #383838;
+}
+.new-qrcode-c .qrcode-body{
+    background-color: #fff;
+    border-radius: .15rem;
+    height: 15.6rem;
+    margin: 2.5rem auto 5.325rem;
+    padding: 1.25rem;
+    width: 11.5rem;    
+}
+.new-qrcode-c .qrcode-body .code img{
+    height: 11.5rem;
+    width: 11.5rem;
+    margin:1.5rem auto 0rem;
+}
+.reload-c{
+    background-color: #333;
+    bottom: 0;
+    height: 2.25rem;
+    left: 0;
+    line-height: 2.25rem;
+    position: fixed;
+    width: 18.75rem;
+}
+.reload{
+    bottom: 0;
+    color: #b0b0b0;
+    font-size: .6rem;
+    left: 50%;
+    line-height: 2.25rem;
+    margin-left: -2.5rem;
+    position: absolute;
+    text-align: center;
+    width: 5rem;    
+}
+/*我的地址*/
+.my-address-page{
+    background: #f0f0f0;
+    width: 100%;  
+}
+.page-wrap{  
+    min-height: 678px; 
+}
+.address-item{
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    color: #b0b0b0;
+    display: block;
+    padding: .5rem .75rem;    
+}
+.page-wrap .address-item .name{
+    display: inline-block;
+    max-width: 9.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #444;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+}
+.page-wrap .address-item .tel{
+    color: #444;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    float: right;
+}
+.page-wrap .address-item .address-info{
+    font-size: .6rem;
+    line-height: .95rem;    
+}
+.page-wrap .address-item .action{
+    font-size: .8rem;
+    line-height: 1.5rem;
+    text-align: right;    
+}
+.address-item .action .edit{
+    margin-right: .5rem;
+    color: #999;
+    display: inline-block;
+    height: 1.5rem;
+    text-align: center;
+    width: 1.5rem;
+}
+.address-item .action .del{
+    color: #ccc;
+    display: inline-block;
+    height: 1.5rem;
+    text-align: center;
+    width: 1.5rem;
+}
+.tip{
+    color: #aeaeae;
+    padding: .5rem;
+    text-align: center;    
+}
+.add-address{
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    color: #444;
+    display: block;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    margin-bottom: .75rem;
+    text-align: center;    
+}
+/*添加新地址*/
+.my-address-page{
+    background: #f0f0f0;
+    width: 100%;    
+}
+.my-edit-address-page{
+    background: #f0f0f0;
+    color: #d0d0d0;
+    width: 100%;
+}
+.edit-address{
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: .75rem;
+    line-height: 2.3rem;
+    padding: 0 .75rem;    
+}
+.edit-address label{
+    display: block;
+    position: relative; 
+    border-bottom:1px solid #e0e0e0;   
+}
+.edit-address input{
+    border: none;
+    color: #444;
+    height: 2.2rem;
+    padding: 0;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    width: 9rem;  
+    outline: none;  
+}
+.edit-address .area .iconfont{
+    position: absolute;
+    right: 0;
+    top: 0;    
+}
+.edit-address .address{
+    height: 3.9rem;
+}
+.edit-address .address textarea{
+    position: absolute;
+    height: 2.9rem;
+    padding: .5rem 0;
+    resize: none;
+    right: 0;
+    width: 10rem;
+    border: none;
+    color: #444;
+    top: 0;
+    outline: none;
+}
+.submit{
+    background: #444;
+    color: #fff;
+    font-size: .8rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    margin: .75rem auto 0;
+    text-align: center;
+    width: 11.75rem;
+}
+/*我的收藏*/
+.yoho-favorite-page{
+    height: auto;
+    width: 18.75rem;
+}
+.fav-tab{
+    border-bottom: 1px solid #e0e0e0;
+    color: #b0b0b0;
+    font-size: .65rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    width: 18.75rem;
+}
+.fav-tab .active{
+    color: #444;    
+}
+.fav-tab li:last-of-type {
+    float: right;
+    position: relative;
+}
+.fav-tab li{
+    float: left;
+    height: 100%;
+    text-align: center;
+    width: 50%;
+}
+.show {
+    display: block!important;
+}
+.fav-type{
+
+}
+.fav-content .fav-product-list {
+    list-style: none;
+    margin-left: .75rem;
+}
+.fav-content .fav-product-list li {
+    height: auto;
+    margin-top: .5rem;
+    overflow: hidden;
+}
+.fav-product-list .fav-img-box {
+    float: left;
+    height: 3rem;
+    margin-right: .6rem;
+    width: 2.25rem;
+}
+.fav-product-list .fav-img-box img {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    border:none;
+}
+.fav-product-list .fav-info-list {
+    border-bottom: 1px solid #e0e0e0;
+    color: #444;
+    font-size: .6rem;
+    height: 3.5rem;
+    overflow: hidden;
+    padding-bottom: .5rem;
+    position: relative;
+}
+.fav-product-list .fav-info-list h2 {
+    text-overflow: ellipsis;
+    width: 10.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.fav-price .new-price {
+    color: #d1021c;
+}
+.fav-price .price-underline {
+    color: #b0b0b0;
+    margin-left: .375rem;
+    text-decoration: line-through;
+}
+.fav-info-list .save-price {
+    bottom: .5rem;
+    left: 0;
+    min-height: .6rem;
+    position: absolute;
+    width: 100%;
+}
+.fav-info-list .save-price .del-fav {
+    color: #999;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: -.75rem;
+    padding-right: .75rem;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 50%;
+    width: 2rem;
+}

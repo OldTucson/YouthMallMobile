@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after{
+    content: ".";
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    zoom: 1;
+}
+.feature-page .floor {
+    position: relative;
+    width: 100%;
+}
+.feature-page .floor img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.feature-page .floor .anchor {
+    background: transparent;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+.feature-page .floor .anchor {
+    background: transparent;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+/* 底部 */
+.bottom-fix {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.bottom-fix img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.bottom-fix .click-area {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.bottom-fix .click-area .per-click {
+    float: left;
+    z-index: 100;
+}
+/* 单品推介 */
+.swiper-container {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-wrapper {
+    -moz-box-sizing: content-box;
+    -moz-transition-property: -moz-transform;
+    -ms-transition-property: -ms-transform;
+    -o-transition-property: -o-transform;
+    -webkit-box-sizing: content-box;
+    -webkit-transition-property: -webkit-transform;
+    box-sizing: content-box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    position: relative;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    width: 100%;
+    z-index: 1;
+}
+.swiper-container.swiper {
+    height: 100%;
+    padding: .125rem .25rem;
+}
+.swiper-slide {
+    -ms-flex: 0 0 auto;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.swiper-slide .anchor {
+    height: 100%;
+    width: 100%;
+}
+/* 品类会场 */
+.product-container.item3 .feature-product-info, .product-container.single-item3 .feature-product-info {
+    margin-right: 0.25rem;
+    width: 5.625rem;
+}
+.product-container.item3, .product-container.single-item3 {
+    font-size: .5rem;
+    padding: 0 .5rem .25rem;
+}
+.product-container {
+    font-size: .55rem;
+    overflow: hidden;
+    padding: 0 .5rem .25rem;
+}
+.product-container .product-source {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.product-container .feature-product-info {
+    float: left;
+    margin-right: .5rem;
+    margin-top: .625rem;
+    overflow: hidden;
+    width: 7.2rem;
+}
+.product-container .feature-product-info a {
+    display: block;
+    text-decoration: none;
+}
+.product-container .second-part {
+    color: #fff;
+    display: block;
+    font-size: .8rem;
+    position: relative;
+}
+.product-container .second-part .brand-div {
+    -webkit-transform: translateX(-50%);
+    font-size: .65rem;
+    height: 1.5rem;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: .1rem;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.product-container .feature-product-info .price {
+    font-size: .45rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+.product-container .feature-product-info .sale-price {
+    color: #f73207;
+    font-size: .75rem;
+}
+.product-container .feature-product-info .market-price {
+    color: #bebebe;
+    margin: 0 0 0 .075rem;
+    text-decoration: line-through;
+}
+.product-container .second-part .brand-div .brand-name {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.product-container.item3 .feature-product-info .sale-price, .product-container.item3 .feature-product-info .vipprice, .product-container.single-item3 .feature-product-info .sale-price, .product-container.single-item3 .feature-product-info .vipprice {
+    font-size: 0.65rem;
+}
+.product-container.item3 .feature-product-info .price, .product-container.item3 .feature-product-info .vipprice, .product-container.single-item3 .feature-product-info .price, .product-container.single-item3 .feature-product-info .vipprice {
+    height: 0.85rem;
+    line-height: 0.85rem;
+}
+.product-container.item3 .brand-name, .product-container.single-item3 .brand-name {
+    font-size: 0.65rem!important;
+    line-height: 0.65rem;
+    margin-left: 0.05rem;
+}
+.product-container .second-part .brand-img {
+    display: block;
+    margin: 0 auto;
+}

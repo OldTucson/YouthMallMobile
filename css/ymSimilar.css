@@ -1,0 +1,79 @@
+.similar-c {
+    background-color: #f0f0f0;
+    padding-bottom: .75rem
+}
+
+.similar-c .good-c {
+    border-top: 1px solid #e0e0e0
+}
+
+.similar-c .good-c .good-item {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    display: block;
+    padding: .5rem .75rem;
+    position: relative
+}
+
+.similar-c .good-c .good-item .pic {
+    float: left;
+    height: 5.075rem;
+    width: 3.8rem
+}
+
+.similar-c .good-c .good-item img {
+    height: 100%;
+    width: 100%
+}
+
+.similar-c .good-c .good-item .info {
+    float: left;
+    margin-left: .75rem;
+    width: 12.7rem
+}
+
+.similar-c .good-c .good-item .name {
+    color: #444;
+    font-size: .7rem;
+    height: 4.25rem;
+    line-height: 1rem;
+    overflow: hidden;
+    padding: .125rem 0
+}
+
+.similar-c .good-c .good-item .price {
+    line-height: .825rem
+}
+
+.similar-c .good-c .good-item .now {
+    color: #d0021b;
+    font-size: .85rem;
+    margin-right: .25rem
+}
+
+.similar-c .good-c .good-item .old {
+    color: #444;
+    font-size: .5rem;
+    text-decoration: line-through
+}
+
+.similar-c .good-c .good-item .btn {
+    border: .05rem solid #d0021b;
+    border-radius: .075rem;
+    bottom: .5rem;
+    color: #d0021b;
+    font-size: .5rem;
+    height: .9rem;
+    line-height: .9rem;
+    padding: 0 .25rem;
+    position: absolute;
+    right: .75rem;
+    text-align: center
+}
+
+.similar-c .big-title {
+    color: #b0b0b0;
+    font-size: .7rem;
+    line-height: 2.2rem;
+    text-align: center
+}

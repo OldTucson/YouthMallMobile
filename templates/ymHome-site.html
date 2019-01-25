@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>我的地址</title>
+	<link rel="stylesheet" href="../css/ymHome.css">
+    <link rel="stylesheet" href="../icon/ymHome_icon/iconfont.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+    <script type="text/javascript" src="../lib/rem.js"></script>
+</head>
+<body class="font">
+
+<div class="wrap">
+	<div class="top-downloadbar">
+	    <a href="" class="download-close"></a>
+	    <span class="download-icon"></span>
+	    <span class="download-text">Yoho!Buy有货</span>
+	    <p class="download-text-desc">新用户送惊喜礼包</p>
+	    <a href="../index.html" class="download-go">立即打开</a>
+	</div>
+	<div class="header">
+		<a href="../ymHome.html" class="iconfont nav-back icon-fanhui1"></a>
+		<span class="iconfont nav-home icon-daohang"></span>
+		<p class="header-title">我的地址</p>
+		<div class="header-nav display">
+			<div class="nav-arr"></div>
+			<ul>
+				<li>
+					<a href="index.html"></a>
+					<i class="iconfont"></i>
+					<span>首页</span>
+				</li>
+				<li>
+					<a href="ymCate.html"></a>
+					<i class="iconfont"></i>
+					<span>分类</span>
+				</li>
+				<li>
+					<a href="ymCart.html"></a>
+					<i class="iconfont"></i>
+					<span>购物车</span>
+				</li>
+				<li>
+					<a href=""></a>
+					<i class="iconfont"></i>
+					<span>我的</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="my-address-page">
+	    <div class="page-wrap">
+		    <!-- <div class="address-item">
+			    <span class="name">*10</span>
+			    <span class="tel">155****0232</span>
+			    <p class="address-info">河南省 郑州市 二七区 淮河路街道 啊啊啊*</p>
+			    <div class="action iconfont">
+				    <a href="ymHome-addsite.html" class="edit"></a>
+				    <i class="icon-laji del"></i>
+			    </div>
+		    </div>   -->
+	        <div class="tip">
+	            为提高配送时效，请您尽量准确填写四级地址。
+            </div>
+	        <a href="ymHome-addsite.html" class="add-address">添加新地址</a>
+	    </div>
+    </div>
+</div>
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/qrcode.js"></script>
+<script src="../js/ymHome-site.js"></script>
+<script>
+// 隐藏导航
+;(function(){
+	$(".nav-home").click(function(){
+		$(".header-nav").toggleClass("display");
+	})
+})()
+
+</script>
+</body>
+</html>

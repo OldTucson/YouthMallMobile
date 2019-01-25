@@ -1,0 +1,313 @@
+*{
+	margin: 0;
+	padding: 0;
+    font-family: "微软雅黑";
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+.clearfix{*zoom:1;}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+	list-style: none;
+}
+img{
+    border: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+html,body{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+/*主体内容*/
+.main-wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.main-wrap .main-content{
+    width: 100%;
+    /* background: #f0f0f0; */
+}
+.main-wrap .main-content .main-header{
+    color: #fff;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    position: relative;
+    width: 100%;
+    z-index: 20;
+    
+}
+.main-wrap .main-content .life{
+    background: #4f4138;
+}
+.main-wrap .main-content .kid{
+    background: #7ad9f9;
+}
+.main-wrap .main-content .boy{
+    background: #323232;
+}
+.main-wrap .main-content .girl{
+    background: #ff88ae;
+}
+.main-wrap .main-content .main-header .nav-back{
+    color: #fff;
+    display: block;
+    font-size: 40px;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 2.25rem;
+    left: 0;
+}
+.main-wrap .main-content .main-header .nav-home{
+    color: #fff;
+    display: block;
+    font-size: 20PX;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 2.25rem;
+    right: 0;
+}
+.main-wrap .main-content .main-header .nav-title{
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 700;
+    height: 100%;
+    left: 0;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    top: 0;
+    white-space: nowrap;
+}
+.main-wrap .main-content .main-header>.show{
+    display: block;
+}
+.main-wrap .main-content .main-header .homebutton{
+    background-size: 100% 100%;
+    color: #fff;
+    height: 8.875rem;
+    overflow: hidden;
+    padding-top: .425rem;
+    position: absolute;
+    right: .3rem;
+    top: 2rem;
+    width: 7rem;
+    z-index: 2;
+    display: none;
+}
+.main-wrap .main-content .main-header .homebutton .ul-arr{
+    height: .75rem;
+    position: absolute;
+    right: .8rem;
+    top: .1rem;
+    transform: rotate(45deg);
+    width: .75rem;
+    /* background: #ff88ae; */
+}
+.main-wrap .main-content .main-header .homebutton .life{
+    background: #4f4138;
+}
+.main-wrap .main-content .main-header .homebutton .kid{
+    background: #7ad9f9;
+}
+.main-wrap .main-content .main-header .homebutton .boy{
+    background: #323232;
+}
+.main-wrap .main-content .main-header .homebutton .girl{
+    background: #ff88ae;
+}
+.main-wrap .main-content .main-header .homebutton ul{
+    border-radius: .25rem;
+    height: 8.45rem;
+    overflow: hidden;
+    padding: 1px 0;
+    width: 100%;
+    /* background-image: linear-gradient(#fc89ad,#e96e94); */
+}
+.main-wrap .main-content .main-header .homebutton ul li{
+    float: left;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    overflow: hidden;
+    padding-left: 1rem;
+    width: 100%;
+}
+.main-wrap .main-content .main-header .homebutton ul li a i{
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: .75rem;
+    width: 1.75rem;
+}
+.main-wrap .main-content .main-header .homebutton ul li a span{
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: .7rem;
+    height: 2.1rem;
+    padding-left: .5rem;
+    width: 4.25rem;
+}
+
+
+
+.main-wrap .main-content .ym-footer{
+    background-color: #fff;
+    /* display: none; */
+    font-size: .6rem;
+    position: relative;
+    width: 100%;
+}
+.main-wrap .main-content .ym-footer .op-row{
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 .75rem;
+}
+.main-wrap .main-content .ym-footer .op-row span{
+    display: inline-block;
+    overflow: hidden;
+}
+.main-wrap .main-content .ym-footer .op-row .user-name{
+    max-width: 5rem;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.main-wrap .main-content .ym-footer .op-row .sep-line{
+    color: #e0e0e0;
+    margin: 0 .75rem;
+}
+.main-wrap .main-content .ym-footer .op-row a{
+    display: inline-block;
+    overflow: hidden;
+}
+.main-wrap .main-content .ym-footer .op-row .back-to-top{
+    position: absolute;
+    right: 1rem;
+}
+.main-wrap .main-content .ym-footer .float-top{
+
+}
+.main-wrap .main-content .ym-footer .copyright{
+    background-color: #eee;
+    color: #666;
+    font-size: .6rem;
+    height: 60PX;
+    line-height: 60PX;
+    text-align: center;
+    font-style: normal;
+}
+
+.main-wrap .main-content .ym-footer .op-row .checkOutModel{
+    display: inline-block;
+    overflow: hidden;
+}
+.main-wrap .main-content .good-list-page .pay-page{
+    padding: 1rem .5rem 0;
+}
+.main-wrap .main-content .good-list-page .pay-page .payapp-list .box{
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border: 1px solid #eee;
+    border-radius: .25rem;
+    margin-bottom: .5rem;
+    padding: .3rem .5rem;
+}
+.main-wrap .main-content .good-list-page .pay-page .payapp-list .box .icon{
+    -webkit-flex-basis: 15%;
+    flex-basis: 15%;
+    width: 15%;
+    min-height: 1rem;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.main-wrap .main-content .good-list-page .pay-page .payapp-list .box .icon>div{
+    background-image: url(../img/logo_icon/pay_icon.png);
+    background-position-x: center;
+    background-position-y: .2rem;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.main-wrap .main-content .good-list-page .pay-page .payapp-list .box .icon>.weichat{
+    background-image: url(../img/logo_icon/pay_icon.png);
+    background-position-x: center;
+    background-position-y: -1.1rem;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.main-wrap .main-content .good-list-page .pay-page .payapp-list .box .app{
+    -webkit-flex-basis: 35%;
+    color: #414141;
+    flex-basis: 35%;
+    font-size: .8rem;
+    width: 35%;
+    min-height: 1rem;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.main-wrap .main-content .good-list-page .pay-page .payapp-list .box .hint{
+    -webkit-flex-basis: 45%;
+    color: #4b4b4b;
+    flex-basis: 45%;
+    font-size: .6rem;
+    width: 45%;
+    min-height: 1rem;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.main-wrap .main-content .good-list-page .pay-page .payapp-list .box .iconfont{
+    color: #e0e0e0;
+    font-size: .7rem;
+    justify-content: flex-end;
+
+}

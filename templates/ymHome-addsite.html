@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>添加新地址</title>
+	<link rel="stylesheet" href="../css/ymHome.css">
+    <link rel="stylesheet" href="../icon/ymHome_icon/iconfont.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+    <script type="text/javascript" src="../lib/rem.js"></script>
+</head>
+<body class="font">
+
+<div class="wrap">
+	<div class="top-downloadbar">
+	    <a href="" class="download-close"></a>
+	    <span class="download-icon"></span>
+	    <span class="download-text">Yoho!Buy有货</span>
+	    <p class="download-text-desc">新用户送惊喜礼包</p>
+	    <a href="../index.html" class="download-go">立即打开</a>
+	</div>
+	<div class="header">
+		<a href="ymHome-site.html" class="iconfont nav-back icon-fanhui1"></a>
+		<span class="iconfont nav-home icon-daohang"></span>
+		<p class="header-title">添加新地址</p>
+		<div class="header-nav display">
+			<div class="nav-arr"></div>
+			<ul>
+				<li>
+					<a href="index.html"></a>
+					<i class="iconfont"></i>
+					<span>首页</span>
+				</li>
+				<li>
+					<a href="ymCate.html"></a>
+					<i class="iconfont"></i>
+					<span>分类</span>
+				</li>
+				<li>
+					<a href="ymCart.html"></a>
+					<i class="iconfont"></i>
+					<span>购物车</span>
+				</li>
+				<li>
+					<a href=""></a>
+					<i class="iconfont"></i>
+					<span>我的</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="my-address-page yoho-page">
+		<div class="tip">为提高配送时效，请您尽量准确填写四级地址。</div>
+		<div class="my-edit-address-page page-wrap">
+			<form class="edit-address">
+				<!-- 收 货 人 :username -->
+				<label class="username">
+					收 货 人 :
+					<input type="text" maxlength="21">
+				</label>
+				<!-- 联系电话:mobile -->
+				<label class="mobile">
+					联系电话:
+					<input type="text">
+				</label>
+				<!-- 所在地区:area -->
+				<label class="area">所在地区:
+					<input type="text">
+					<span class="iconfont"></span>
+				</label>
+				<!-- 详细地址:address -->
+				<label class="address">
+					详细地址:
+					<textarea name="address" maxlength="255"></textarea>
+				</label>
+			</form>
+			<div class="submit">保存</div>
+		</div>
+	</div>
+</div>
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/qrcode.js"></script>
+<script src="../js/ymHome.js"></script>
+<script>
+// 数据库添加数据
+;(function(){
+	var name=$(".username").children("input");
+	var mobile=$(".mobile").children("input");
+	var area=$(".area").children("input");
+	var address=$(".address").children("textarea");
+	$(".submit").click(function(){
+		var nameVal=name.val(),
+		    mobileVal=mobile.val(),
+		    areaVal=area.val(),
+		    addressVal=address.val();
+		$.ajax({
+            type: 'POST', //http请求方式为post
+            url: '../php/ymHomeaddsite.php', //请求的url地址
+            // dataType: 'json', //预期的服务器响应的数据类型
+            data: { //需要发送的数据
+                name: nameVal,
+                mobile: mobileVal,
+                area: areaVal,
+                address: addressVal
+            },
+            success:
+            	function(){
+            		console.log("success")
+            	}
+            ,
+            error:
+            	function(){
+            		console.log(0)
+            	}
+            
+        })
+	})
+})()
+
+//解析URL获取id
+;(function(){
+	function GetQueryString(name){
+	　　var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	　　var r = window.location.search.substr(1).match(reg);
+	　　if(r!=null){
+		// console.log(200000);
+		return unescape(r[2]);
+		}else{
+			 return null;
+		}
+	}
+	var myurl=GetQueryString("id");
+		$.ajax({
+		type:"get",
+		url:"../php/ymHome.php",
+		dataType:"json",
+		data:{
+			id:myurl
+		},
+		success:function(data){
+			if(data.success==1){
+				console.log(111);
+				$(".username").children("input").val(data["list"][0]["name1"]);
+				$(".mobile").children("input").val(data["list"][0]["tel"]);
+				$(".area").children("input").val(data["list"][0]["addressinfo"]);
+				$(".address").children("textarea").val(data["list"][0]["address"]);
+				
+			}
+		},
+		error:function(){
+			console.log("error");
+		}
+	});
+})()
+</script>
+</body>
+</html>

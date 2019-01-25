@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/hot_cate.css">
+    <link rel="stylesheet" href="css/topBar.css">
+    <link rel="stylesheet" href="icon/index_icon/iconfont.css">
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="lib/cookie.js"></script>
+    <script src="lib/indexRem.js"></script>
+    <script src="lib/jquery.lazyload.js"></script>
+    <script src="js/hot_cate.js"></script>
+</head>
+<body>
+    <!-- 通用顶部app下载 -->
+    <div class="top-downloadbar-box">
+        <div class="top-downloadbar">
+            <a class="download-close" href="javascript:void(0);"></a>
+            <span class="download-icon"></span>
+            <span class="download-text">Youth Mall!潮流商城</span>
+            <p class="download-text-desc">新用户送惊喜礼包</p>
+            <a href="javascript:void(0);" class="download-go">立即打开</a>
+        </div>
+    </div>
+    <!-- 主体内容 -->
+    <div class="main-wrap">
+        <!-- <div class="main-bc"></div> -->
+        <div class="main-content">
+            <!-- 顶部导航栏 -->
+            <header class="main-header">
+                <a href="javascript:history.go(-1);" class="nav-back">&#139;</a>
+                <span class="iconfont nav-home icon-liebiao"></span>
+                <p class="nav-title"></p>
+                <div class="homebutton">
+                    <div class="ul-arr"></div>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-shouye1-copy"></i>
+                                <span>首页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-icon_category"></i>
+                                <span>分类</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-gouwuche"></i>
+                                <span>购物车</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-weibiaoti-_huabanfuben"></i>
+                                <span>我的</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <!-- 主体内容 -->
+            <div class="good-list-page">
+                <div class="filter-tab">
+                <ul id="list-nav" class="list-nav clearfix">
+                    <li class="default active">
+                        <a href="javascript:void(0);">
+                            <span class="nav-txt default-txt">默认</span>
+                            <span class="iconfont icon-jiantou"></span>
+                        </a>
+                    </li>
+                    <li class="new  buriedpoint filterbtn" filter='new'>
+                        <a href="javascript:void(0);">
+                            <span class="nav-txt">新品</span>
+                        </a>
+                    </li>
+                    <li class="popularity  buriedpoint filterbtn" filter='hotRate'>
+                        <a href="javascript:void(0);">
+                            <span class="nav-txt">人气</span>
+                        </a>
+                    </li>
+                    <li class="price  buriedpoint priceSort" filter='price'>
+                        <a href="javascript:void(0);">
+                            <span class="nav-txt">价格</span>
+                            <span class="icon">
+                                <i class="iconfont icon-jiantoushang cur up"></i>
+                                <i class="iconfont icon-jiantouxia down"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="filter buriedpoint">
+                        <a href="javascript:void(0);">
+                            <span class="nav-txt">筛选</span>
+                            <span class="iconfont icon-jiantou"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="drop-list">
+                    <li class="default filterbtn" filter='id' data-text="默认">
+                        <span>默认</span>
+                        <span class="chose"></span>
+                    </li>
+                    <li class="discount dec filterbtn" filter='price' data-text="折扣">
+                        <span>折扣从高到低</span>
+                        <span class="chose"></span>
+                    </li>
+                    <li class="discount asc active filterbtn" filter='hotRate' data-text="折扣">
+                        <span>折扣从低到高</span>
+                        <span class="chose"></span>
+                    </li>
+                </ul>
+            </div>    
+            <div class="goods-container">
+                <div class="filter-mask" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <div class="filter-body">
+                            <ul class="classify">
+                                    <li class="classify-item active" data-bp-id="filter_classify_所有性别_true">
+                                        <p class="shower">
+                                            <span class="title">性别：</span>
+                                            <span class="select_title">所有性别</span>
+                                        </p>
+                                        <ul class="sub-classify" data-type="gender">
+                                                <li class="sub-item chosed dirAll" data-id="1,2,3" data-bp-id="filter_subclassify_所有性别_true">
+                                                    所有性别
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item dirFilter" data-id="2,3" data-bp-id="filter_subclassify_WOMEN_true">
+                                                    BOY
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item dirFilter" data-id="2,3" data-bp-id="filter_subclassify_WOMEN_true">
+                                                    GIRL
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                
+                                        </ul>
+                                    </li>
+                                    <li class="classify-item" data-bp-id="filter_classify_所有品牌_true">
+                                        <p class="shower">
+                                            <span class="title">品牌：</span>
+                                            <span class="select_title">所有品牌</span>
+                                        </p>
+                                        <ul class="sub-classify" data-type="brand">
+                                                <li class="sub-item chosed" data-id="0" data-bp-id="filter_subclassify_所有品牌_true">
+                                                    所有品牌
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="89" data-bp-id="filter_subclassify_mrkt 马克兔_true">
+                                                    mrkt 马克兔
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1383" data-bp-id="filter_subclassify_Gelei Story_true">
+                                                    Gelei Story
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3042" data-bp-id="filter_subclassify_Flavours Don’t Lie_true">
+                                                    Flavours Don’t Lie
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3480" data-bp-id="filter_subclassify_WHOOSIS_true">
+                                                    WHOOSIS
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1932" data-bp-id="filter_subclassify_奇连数码_true">
+                                                    奇连数码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1976" data-bp-id="filter_subclassify_club xxhh_true">
+                                                    club xxhh
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3438" data-bp-id="filter_subclassify_UNIFREE_true">
+                                                    UNIFREE
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1656" data-bp-id="filter_subclassify_foot industry_true">
+                                                    foot industry
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3238" data-bp-id="filter_subclassify_FEO_true">
+                                                    FEO
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="795" data-bp-id="filter_subclassify_Draconite_true">
+                                                    Draconite
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="313" data-bp-id="filter_subclassify_Reebok_true">
+                                                    Reebok
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="710" data-bp-id="filter_subclassify_MADNESS_true">
+                                                    MADNESS
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="117" data-bp-id="filter_subclassify_RASEN family_true">
+                                                    RASEN family
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3710" data-bp-id="filter_subclassify_Feeder Studio_true">
+                                                    Feeder Studio
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3570" data-bp-id="filter_subclassify_芍藥居少女原创设计_true">
+                                                    芍藥居少女原创设计
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="2316" data-bp-id="filter_subclassify_UMAMIISM_true">
+                                                    UMAMIISM
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1986" data-bp-id="filter_subclassify_TURN SIGNAL_true">
+                                                    TURN SIGNAL
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1589" data-bp-id="filter_subclassify_魔吻 Mover_true">
+                                                    魔吻 Mover
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="2116" data-bp-id="filter_subclassify_Dickies 箱包_true">
+                                                    Dickies 箱包
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="641" data-bp-id="filter_subclassify_inmix_true">
+                                                    inmix
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="2556" data-bp-id="filter_subclassify_ERAL_true">
+                                                    ERAL
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1026" data-bp-id="filter_subclassify_JNBY_true">
+                                                    JNBY
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1422" data-bp-id="filter_subclassify_PINKORANGE_true">
+                                                    PINKORANGE
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1387" data-bp-id="filter_subclassify_MO&amp;Co._true">
+                                                    MO&amp;Co.
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3762" data-bp-id="filter_subclassify_SubCrew 箱包_true">
+                                                    SubCrew 箱包
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3720" data-bp-id="filter_subclassify_COINK ART &amp; DESIGN_true">
+                                                    COINK ART &amp; DESIGN
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1508" data-bp-id="filter_subclassify_NANAWANG_true">
+                                                    NANAWANG
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1109" data-bp-id="filter_subclassify_AliyaStore_true">
+                                                    AliyaStore
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3420" data-bp-id="filter_subclassify_Stanley_true">
+                                                    Stanley
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3022" data-bp-id="filter_subclassify_Red Charcoal_true">
+                                                    Red Charcoal
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3582" data-bp-id="filter_subclassify_中国李宁_true">
+                                                    中国李宁
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1281" data-bp-id="filter_subclassify_iHubb_true">
+                                                    iHubb
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1081" data-bp-id="filter_subclassify_Even Vintage_true">
+                                                    Even Vintage
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="373" data-bp-id="filter_subclassify_BABYGHOST_true">
+                                                    BABYGHOST
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="210" data-bp-id="filter_subclassify_oasso_true">
+                                                    oasso
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="138" data-bp-id="filter_subclassify_THETHING_true">
+                                                    THETHING
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="2366" data-bp-id="filter_subclassify_Marlab_true">
+                                                    Marlab
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3576" data-bp-id="filter_subclassify_UNDORABLE_true">
+                                                    UNDORABLE
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3498" data-bp-id="filter_subclassify_CATSON STORE_true">
+                                                    CATSON STORE
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="657" data-bp-id="filter_subclassify_MOUSSY_true">
+                                                    MOUSSY
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3696" data-bp-id="filter_subclassify_C-PIX_true">
+                                                    C-PIX
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="934" data-bp-id="filter_subclassify_Epiphqny_true">
+                                                    Epiphqny
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="419" data-bp-id="filter_subclassify_HASO_true">
+                                                    HASO
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="2848" data-bp-id="filter_subclassify_Bromen不莱玫_true">
+                                                    Bromen不莱玫
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="30" data-bp-id="filter_subclassify_Chetti Rouge轩谛_true">
+                                                    Chetti Rouge轩谛
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="2726" data-bp-id="filter_subclassify_steelsir_true">
+                                                    steelsir
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3670" data-bp-id="filter_subclassify_AlphaStyle_true">
+                                                    AlphaStyle
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1011" data-bp-id="filter_subclassify_KAMI ANGER_true">
+                                                    KAMI ANGER
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3552" data-bp-id="filter_subclassify_FMACM_true">
+                                                    FMACM
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1691" data-bp-id="filter_subclassify_bla bla bra_true">
+                                                    bla bla bra
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3152" data-bp-id="filter_subclassify_PHIM_true">
+                                                    PHIM
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1888" data-bp-id="filter_subclassify_PRODbldg_true">
+                                                    PRODbldg
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="144" data-bp-id="filter_subclassify_VANS_true">
+                                                    VANS
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="980" data-bp-id="filter_subclassify_B+ by Beautyberry_true">
+                                                    B+ by Beautyberry
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1644" data-bp-id="filter_subclassify_JOYSPORT_true">
+                                                    JOYSPORT
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1523" data-bp-id="filter_subclassify_ENSHADOWER隐蔽者_true">
+                                                    ENSHADOWER隐蔽者
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="783" data-bp-id="filter_subclassify_CASIO_true">
+                                                    CASIO
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3502" data-bp-id="filter_subclassify_yetiXXX_true">
+                                                    yetiXXX
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="146" data-bp-id="filter_subclassify_VOCHIC_true">
+                                                    VOCHIC
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="268" data-bp-id="filter_subclassify_New Era_true">
+                                                    New Era
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3146" data-bp-id="filter_subclassify_MATERIAL GIRL_true">
+                                                    MATERIAL GIRL
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="349" data-bp-id="filter_subclassify_adidas Originals_true">
+                                                    adidas Originals
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="228" data-bp-id="filter_subclassify_SMG_true">
+                                                    SMG
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3784" data-bp-id="filter_subclassify_SONY索尼_true">
+                                                    SONY索尼
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="507" data-bp-id="filter_subclassify_Victoria’s Secret_true">
+                                                    Victoria’s Secret
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="classify-item" data-bp-id="filter_classify_所有品类_true">
+                                        <p class="shower">
+                                            <span class="title">品类：</span>
+                                            
+                                            <span class="select_title">所有品类</span>
+                                        </p>
+                                        <ul class="sub-classify" data-type="sort">
+                                                <li class="sub-item chosed" data-id="0" data-bp-id="filter_subclassify_所有品类_true">
+                                                    所有品类
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="293,173,121,122,1898,123,124,114,125,115,1894,258,413,116,227,117,118,119,1906,1902" data-bp-id="filter_subclassify_上衣_true">
+                                                    上衣
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="133,223,346,348,129,130,131" data-bp-id="filter_subclassify_裤装_true">
+                                                    裤装
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="231,147,148,149,151,508" data-bp-id="filter_subclassify_鞋靴_true">
+                                                    鞋靴
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="134,135" data-bp-id="filter_subclassify_裙装_true">
+                                                    裙装
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="160,161,195,152,196,240,153,197,340,351,341,342,210,156,233,157,300,238,239,349,339" data-bp-id="filter_subclassify_包类_true">
+                                                    包类
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="295,330,331,199,234,235,213,334,217,316,218,317,72,74,75,76,77,78,79,162,163,186,142,164,320,321,322,323,224,324,325,303,326,327,305,80,328,306,329,307" data-bp-id="filter_subclassify_服配_true">
+                                                    服配
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="364,311,357,359" data-bp-id="filter_subclassify_内衣/家居服_true">
+                                                    内衣/家居服
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1580,1612,1534,1698,1498,1652,1696,1530,1574,1496,1694,1616,1538,1594,1624,1502,1700,1544,1588,1620,1542,1540,1584,1628,1506,1548,1682,1482,1514,1558,1632,1676,1510,1552,1672,1636,1494,1692,1570,1690,1490,1524,1566,1642,1520,1564,1486,1684,1606,1648" data-bp-id="filter_subclassify_美妆/个护_true">
+                                                    美妆/个护
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1220,1382,1380,1414,1216,1214,1334,1378,1410,1212,1210,1298,1418,1416,1218,1352,1230,1390,1426,1228,1348,1304,1424,1226,1346,1302,1224,1420,1222,1342,1386,1308,1428,1242,1362,1240,1316,1238,1314,1358,1236,1356,1234,1310,1232,1330,1374,1372,1250,1294,1370,1326,1248,1402,1368,1246,1322,1244,1320,1364,1406,1208" data-bp-id="filter_subclassify_数码3C_true">
+                                                    数码3C
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1660,1582,1734,1656,1578,1732,1654,1610,1650,1618,1738,1614,1670,1592,1590,1668,1622,1666,1664,1586,1740,1662,1708,1626,1702,1680,1712,1634,1678,1630,1674,1596,1718,1716,1638,1572,1646,1888,1602,1568,1644,1688,1600,1686,1640,1608,1728,1726,1604" data-bp-id="filter_subclassify_居家生活_true">
+                                                    居家生活
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1396,1440,1462,1384,1394,1392,1404,1412,1434,1456,1400,1466,1388,1432,1398,1430,1452,1408,1438" data-bp-id="filter_subclassify_玩具礼品_true">
+                                                    玩具礼品
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1756,1832,1754,1710,1776,1852,1730,1750,1772,1816,1814,1836,1858,1856,1792,1744,1722,1820,1842,1742,1764,1720,1786,1862,1760,1782,1808,1828,1706,1804,1802,1846,1746,1724" data-bp-id="filter_subclassify_厨具餐具_true">
+                                                    厨具餐具
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="classify-item" data-bp-id="filter_classify_所有颜色_true">
+                                        <p class="shower">
+                                            <span class="title">颜色：</span>
+                                            
+                                            <span class="select_title">所有颜色</span>
+                                        </p>
+                                        <ul class="sub-classify" data-type="color">
+                                                <li class="sub-item chosed" data-id="0" data-bp-id="filter_subclassify_所有颜色_true">
+                                                    所有颜色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="11" data-bp-id="filter_subclassify_红色_true">
+                                                    红色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="12" data-bp-id="filter_subclassify_橙色_true">
+                                                    橙色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="13" data-bp-id="filter_subclassify_银色_true">
+                                                    银色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="14" data-bp-id="filter_subclassify_金色_true">
+                                                    金色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="15" data-bp-id="filter_subclassify_彩色_true">
+                                                    彩色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1" data-bp-id="filter_subclassify_白色_true">
+                                                    白色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="2" data-bp-id="filter_subclassify_黑色_true">
+                                                    黑色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="3" data-bp-id="filter_subclassify_灰色_true">
+                                                    灰色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="4" data-bp-id="filter_subclassify_棕色_true">
+                                                    棕色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="6" data-bp-id="filter_subclassify_绿色_true">
+                                                    绿色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="7" data-bp-id="filter_subclassify_蓝色_true">
+                                                    蓝色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="8" data-bp-id="filter_subclassify_紫色_true">
+                                                    紫色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="9" data-bp-id="filter_subclassify_黄色_true">
+                                                    黄色
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="classify-item" data-bp-id="filter_classify_所有尺码_true">
+                                        <p class="shower">
+                                            <span class="title">尺码：</span>
+                                            
+                                            <span class="select_title">所有尺码</span>
+                                        </p>
+                                        <ul class="sub-classify" data-type="size">
+                                                <li class="sub-item chosed" data-id="0" data-bp-id="filter_subclassify_所有尺码_true">
+                                                    所有尺码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="90" data-bp-id="filter_subclassify_35码_true">
+                                                    35码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="96" data-bp-id="filter_subclassify_36码_true">
+                                                    36码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="100" data-bp-id="filter_subclassify_37码_true">
+                                                    37码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="104" data-bp-id="filter_subclassify_38码_true">
+                                                    38码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="109" data-bp-id="filter_subclassify_39码_true">
+                                                    39码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="116" data-bp-id="filter_subclassify_40码_true">
+                                                    40码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="122" data-bp-id="filter_subclassify_41码_true">
+                                                    41码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="125" data-bp-id="filter_subclassify_42码_true">
+                                                    42码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="129" data-bp-id="filter_subclassify_43码_true">
+                                                    43码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="133" data-bp-id="filter_subclassify_44码_true">
+                                                    44码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="135" data-bp-id="filter_subclassify_45码_true">
+                                                    45码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="83" data-bp-id="filter_subclassify_34 1/2码_true">
+                                                    34 1/2码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="88" data-bp-id="filter_subclassify_35 1/2码_true">
+                                                    35 1/2码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="94" data-bp-id="filter_subclassify_36 1/2码_true">
+                                                    36 1/2码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="98" data-bp-id="filter_subclassify_37 1/2码_true">
+                                                    37 1/2码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="103" data-bp-id="filter_subclassify_38 1/2码_true">
+                                                    38 1/2码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="114" data-bp-id="filter_subclassify_40 1/2码_true">
+                                                    40 1/2码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="123" data-bp-id="filter_subclassify_42 1/2码_true">
+                                                    42 1/2码
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="207" data-bp-id="filter_subclassify_S_true">
+                                                    S
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="203" data-bp-id="filter_subclassify_M_true">
+                                                    M
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="201" data-bp-id="filter_subclassify_L_true">
+                                                    L
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="211" data-bp-id="filter_subclassify_XL_true">
+                                                    XL
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="216" data-bp-id="filter_subclassify_XXL_true">
+                                                    XXL
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="218" data-bp-id="filter_subclassify_XXXL_true">
+                                                    XXXL
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="217" data-bp-id="filter_subclassify_XXS_true">
+                                                    XXS
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="213" data-bp-id="filter_subclassify_XS_true">
+                                                    XS
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1" data-bp-id="filter_subclassify_1_true">
+                                                    1
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="41" data-bp-id="filter_subclassify_2_true">
+                                                    2
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="148" data-bp-id="filter_subclassify_7/8_true">
+                                                    7/8
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="227" data-bp-id="filter_subclassify_30_true">
+                                                    30
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="228" data-bp-id="filter_subclassify_32_true">
+                                                    32
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="82" data-bp-id="filter_subclassify_34_true">
+                                                    34
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="93" data-bp-id="filter_subclassify_36_true">
+                                                    36
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="102" data-bp-id="filter_subclassify_38_true">
+                                                    38
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="113" data-bp-id="filter_subclassify_40_true">
+                                                    40
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="52" data-bp-id="filter_subclassify_24英寸_true">
+                                                    24英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="56" data-bp-id="filter_subclassify_25英寸_true">
+                                                    25英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="59" data-bp-id="filter_subclassify_26英寸_true">
+                                                    26英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="62" data-bp-id="filter_subclassify_27英寸_true">
+                                                    27英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="65" data-bp-id="filter_subclassify_28英寸_true">
+                                                    28英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="68" data-bp-id="filter_subclassify_29英寸_true">
+                                                    29英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="75" data-bp-id="filter_subclassify_31英寸_true">
+                                                    31英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="81" data-bp-id="filter_subclassify_33英寸_true">
+                                                    33英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="92" data-bp-id="filter_subclassify_35英寸_true">
+                                                    35英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="356" data-bp-id="filter_subclassify_20英寸_true">
+                                                    20英寸
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="199" data-bp-id="filter_subclassify_F_true">
+                                                    F
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="175" data-bp-id="filter_subclassify_80C_true">
+                                                    80C
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="174" data-bp-id="filter_subclassify_80B_true">
+                                                    80B
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="173" data-bp-id="filter_subclassify_80A_true">
+                                                    80A
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="158" data-bp-id="filter_subclassify_75C_true">
+                                                    75C
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="157" data-bp-id="filter_subclassify_75B_true">
+                                                    75B
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="156" data-bp-id="filter_subclassify_75A_true">
+                                                    75A
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="155" data-bp-id="filter_subclassify_70D_true">
+                                                    70D
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="152" data-bp-id="filter_subclassify_70A_true">
+                                                    70A
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="154" data-bp-id="filter_subclassify_70C_true">
+                                                    70C
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="153" data-bp-id="filter_subclassify_70B_true">
+                                                    70B
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1220" data-bp-id="filter_subclassify_X_true">
+                                                    X
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="768" data-bp-id="filter_subclassify_7P/8P_true">
+                                                    7P/8P
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1164" data-bp-id="filter_subclassify_58_true">
+                                                    58
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="850" data-bp-id="filter_subclassify_58cm_true">
+                                                    58cm
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1404" data-bp-id="filter_subclassify_XR_true">
+                                                    XR
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1406" data-bp-id="filter_subclassify_XS Max_true">
+                                                    XS Max
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="classify-item" data-bp-id="filter_classify_所有价格_true">
+                                        <p class="shower">
+                                            <span class="title">价格：</span>
+                                            <span class="select_title">所有价格</span>
+                                        </p>
+                                        <ul class="sub-classify" data-type="price">
+                                                <li class="sub-item chosed" data-id="0" data-bp-id="filter_subclassify_所有价格_true">
+                                                    所有价格
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="0,259" data-bp-id="filter_subclassify_¥0-259_true">
+                                                    ¥0-259
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="260,449" data-bp-id="filter_subclassify_¥260-449_true">
+                                                    ¥260-449
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="450,1099" data-bp-id="filter_subclassify_¥450-1099_true">
+                                                    ¥450-1099
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="1100,3450" data-bp-id="filter_subclassify_¥1099以上_true">
+                                                    ¥1099以上
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="classify-item" data-bp-id="filter_classify_所有商品_true">
+                                        <p class="shower">
+                                            <span class="title">折扣：</span>
+                                            
+                                            <span class="select_title">所有商品</span>
+                                        </p>
+                                        <ul class="sub-classify" data-type="p_d">
+                                                <li class="sub-item chosed" data-id="0,1" data-bp-id="filter_subclassify_所有商品_true">
+                                                    所有商品
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="0.01,0.399" data-bp-id="filter_subclassify_1~3折商品_true">
+                                                    1~3折商品
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="0.4,0.699" data-bp-id="filter_subclassify_4~6折商品_true">
+                                                    4~6折商品
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                                <li class="sub-item" data-id="0.7,0.999" data-bp-id="filter_subclassify_7~9折商品_true">
+                                                    7~9折商品
+                                                    <i class="iconfont icon-xuanzhong-01"></i>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="goods-list">
+                    
+                </div>
+            </div>
+            <!-- footer -->
+            <footer class="ym-footer" style="margin-bottom: 59px; display: block;">
+                <p class="op-row">
+                    <span class="checkInModel">Hi,</span>
+                    <a class="user-name checkInModel" href="#">YOHO-43b19e9b7</a>
+                    <a class="loginBtn checkOutModel" href="ymLoginByUser.html">登录</a>
+                    <span class="sep-line">|</span>
+                    <a href="javascript:;" class="checkOutBtn checkInModel">退出</a>
+                    <a href="ymRegister.html" class="logisterBtn checkOutModel">注册</a>
+                    <span class="back-to-top">
+                        回到顶部
+                        <i class="iconfont icon-jiantoushang"></i>
+                    </span>
+                </p>
+                <div class="float-top "></div>
+                <p></p>
+                <address class="copyright">
+                    CopyRight©2007-2018 南京新与力文化传播有限公司
+                </address>
+            </footer>
+        
+        
+        
+        </div>
+    </div>
+</body>
+</html>

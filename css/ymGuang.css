@@ -1,0 +1,310 @@
+*{
+    margin:0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+.top-downloadbar-box{
+    width: 6.4rem;
+    margin:0 auto;
+}
+.top-downloadbar-box .top-downloadbar{
+    height: 1.1rem;
+    background: rgba(68,68,68,.95);
+    width: 100%;
+    /* padding: .125rem 0; */
+    position: relative;
+}
+.top-downloadbar-box .top-downloadbar .download-close{
+    display: block;
+    margin-left: .2rem;
+    width: .3rem;
+    height: .3rem;
+    background-image: url("../img/logo_icon/downloadClose.png");
+    background-size: .3rem .3rem;
+    margin-top: -0.2rem;
+    position: absolute;
+    left: 0;
+    top:50%;
+}
+.top-downloadbar-box .top-downloadbar .download-icon{
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    left: 0.65rem;
+    top:50%;
+    margin-top: -0.4rem;
+    background-image: url("../img/logo_icon/downloadIcon.png");
+    background-size:0.8rem 0.8rem;
+}
+.top-downloadbar-box .top-downloadbar .download-text {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+    left: 1.5rem;
+    color: #fff;
+    font-size: .25rem;
+}
+.top-downloadbar-box .top-downloadbar .download-text-desc {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-10%) scale(.5);
+    transform: translateY(-10%) scale(.5);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    left: 1.5rem;
+    color: #c7c7c7;
+    font-size: 0.35rem;
+}
+.top-downloadbar-box .top-downloadbar .download-go{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: .2rem;
+    padding: 0 .375rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-radius: .05rem;
+    color: #fff;
+    text-decoration: none;
+    right: .15rem;
+    background:red;
+}
+
+
+
+
+
+
+
+
+.box{
+    width: 6.4rem;
+    margin:0 auto;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.box ul{
+    background-color: #fff;
+    height: 0.8rem;
+    display: flex;
+}
+.box ul li{
+    /* display: inline-block; */
+    width: 1.28rem;
+    height: 0.8rem;
+    font-size: 14px;
+    text-align: center;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.box ul li span{
+    width: 0.56rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin:0 auto;
+    /* color:#444; */
+}
+.box ul li a{
+    color:#ccc;
+}
+.text{
+    border-bottom:0.01rem solid #444;
+}
+.centent{
+    margin-bottom:1rem;
+}
+.banner{
+    width: 6.4rem;
+    height: 3.1rem;
+    margin:0 auto;
+    margin-top: 0.05rem;
+    overflow: hidden;
+    display: flex;
+}
+.banner .swiper-wrapper{
+    display: flex;
+}
+.banner .swiper-slide{
+    width:  6.4rem;
+    height: 100%;
+}
+.banner img{
+    width:  6.4rem;
+    height: 100%;
+}
+.cont{
+    width: 5.8rem;
+    margin:0 auto;
+    margin-top:0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom:1rem;
+}
+.cont .cont-pic{
+    width: 5.8rem;
+    height:3.6rem;
+    margin:0 auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.cont .bg-pic{
+    background-image: url(../img/goods/play-btn.png);
+    background-size: 100%;
+    left:50%;
+    position: absolute;
+    top:20%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    width: 1rem;
+    height: 1rem;
+}
+.cont img{
+    width: 5.8rem;
+    height:3.6rem;
+}
+.cont video{
+    width: 5.8rem;
+    height: 3.6rem;
+}
+.cont .cont-text .cont-title{
+    width: 5.8rem;
+    height: 0.44rem;
+    font-size:20px;
+    /* line-height: 1.1rem; */
+    margin:0 auto;
+    font-weight: 700;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin:0.3rem 0;
+}
+.cont p{
+    font-size:14px;
+}
+.cont .desc{
+    width: 5.8rem;
+    font-size:0.22rem;
+    color:#b0b0b0;
+    margin-top:0.1rem;
+    display: flex;
+    position: relative;
+}
+.cont .desc span:nth-child(2){
+    margin: 0 0.1rem;
+}
+.cont .desc .desc-title{
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center; */
+    position: absolute;
+    top:0;
+    right:0;
+}
+.cont .cont-goods{
+   margin-top:0.3rem;
+   /* width: 100%;  */
+   display: flex;
+   overflow-y: hidden;
+   overflow-x: auto;
+}
+.cont .cont-goods ul{
+    
+    height: 1.38em;
+    display:flex;
+}
+.cont .cont-goods ul li{
+    width: 3.2rem;
+    height:1.38rem;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin-right:0.15rem;
+    /* overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap; */
+}
+.cont .goods-box{
+    display: flex;
+}
+.cont .cont-goods .goods-img{
+    width: 1.06rem;
+    height: 1.38rem;
+}
+.cont .cont-goods .goods-img img{
+    width: 1.04rem;
+    height: 1.38rem;
+    margin:0 auto;
+}
+.cont .goods-info{
+    width: 2.14rem;
+    height: 1.18rem;
+    padding:0.2rem;
+    /* font-size:0.22rem */
+}
+.goods-box .goods-info .goods-desc{
+    width: 1.8rem;
+    color:#444;
+    /* height: 0.44rem; */
+    font-size:0.22rem;
+    display: -webkit-box;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.cont .goods-price{
+    margin-top:0.2rem;
+    font-size:0.22rem;
+    color:#d0021b;
+}
+
+/* 底部按钮 */
+.footer-tab{
+    background: #fff;
+    border-top: 0.01rem solid #b0b0b0;
+    bottom: 0;
+    /* box-sizing: border-box; */
+    height: 1rem;
+    left: 50%;
+    margin-left: -3.2rem;
+    position: fixed;
+    width: 6.4rem;
+    z-index: 3;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    font-size:0.2rem;
+}
+.footer-tab .tab-item{
+    width: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #b0b0b0;
+}
+
+.footer-tab .tab-item p:nth-child(1){
+    font-size: 0.4rem;
+}
+.main-wrap .footer-tab .tab-item p:nth-child(2){
+    font-size: 0.4rem;
+}
+/* .active{
+    color:#000;
+} */

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/myOrderPay.css">
+    <link rel="stylesheet" href="css/topBar.css">
+    <link rel="stylesheet" href="icon/index_icon/iconfont.css">
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="lib/cookie.js"></script>
+    <script src="lib/indexRem.js"></script>
+    <script src="lib/jquery.lazyload.js"></script>
+    <script src="js/myOrderPay.js"></script>
+</head>
+
+<body>
+    <!-- 通用顶部app下载 -->
+    <div class="top-downloadbar-box">
+        <div class="top-downloadbar">
+            <a class="download-close" href="javascript:void(0);"></a>
+            <span class="download-icon"></span>
+            <span class="download-text">Youth Mall!潮流商城</span>
+            <p class="download-text-desc">新用户送惊喜礼包</p>
+            <a href="javascript:void(0);" class="download-go">立即打开</a>
+        </div>
+    </div>
+    <!-- 主体内容 -->
+    <div class="main-wrap">
+        <div class="main-content">
+            <!-- 顶部导航栏 -->
+            <header class="main-header">
+                <a href="javascript:history.go(-1);" class="nav-back">&#139;</a>
+                <span class="iconfont nav-home icon-liebiao"></span>
+                <p class="nav-title">支付中心</p>
+                <div class="homebutton">
+                    <div class="ul-arr"></div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-shouye1-copy"></i>
+                                <span>首页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-icon_category"></i>
+                                <span>分类</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-gouwuche"></i>
+                                <span>购物车</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-weibiaoti-_huabanfuben"></i>
+                                <span>我的</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <!-- 主体内容 -->
+            <div class="good-list-page">
+                <div class="pay-page yoho-page">
+                    <div class="payapp-list" style="visibility: visible;">
+                            <div class="box" id="alipay">
+                                <div class="icon">
+                                    <div></div>
+                                </div>
+                                <div class="app">支付宝支付</div>
+                                <div class="hint">
+                                    支付宝钱包支付
+                                    <br>
+                                    推荐支付宝用户使用
+                                </div>
+                                <div class="iconfont">&#155;</div>
+                            </div>
+                            <div class="box" id="alipay">
+                                <div class="icon">
+                                    <div class="weichat"></div>
+                                </div>
+                                <div class="app">微信支付</div>
+                                <div class="hint">
+                                    微信钱包支付
+                                    <br>
+                                    推荐微信用户使用
+                                </div>
+                                <div class="iconfont">&#155;</div>
+                            </div>
+                    </div>
+                    <div class="loading-toast hide"></div>
+                </div>
+                <!-- footer -->
+                <footer class="ym-footer" style="margin-bottom: 59px; display: block;">
+                    <p class="op-row">
+                        <span class="checkInModel">Hi,</span>
+                        <a class="user-name checkInModel" href="#">YOHO-43b19e9b7</a>
+                        <a class="loginBtn checkOutModel" href="ymLoginByUser.html">登录</a>
+                        <span class="sep-line">|</span>
+                        <a href="javascript:;" class="checkOutBtn checkInModel">退出</a>
+                        <a href="ymRegister.html" class="logisterBtn checkOutModel">注册</a>
+                        <span class="back-to-top">
+                            回到顶部
+                            <i class="iconfont icon-jiantoushang"></i>
+                        </span>
+                    </p>
+                    <div class="float-top "></div>
+                    <p></p>
+                    <address class="copyright">
+                        CopyRight©2007-2018 南京新与力文化传播有限公司
+                    </address>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

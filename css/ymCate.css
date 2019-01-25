@@ -1,0 +1,233 @@
+body,ul,li {
+    padding:0;
+    margin:0;
+    border:0;
+}
+body {
+    font-size:12px;
+    font-family:helvetica;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+a{
+    color: #000;
+    outline: none;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+button{
+    border: 0;
+    outline: 0;
+}
+input{
+    font-size: 100%;
+    margin: 0;
+}
+.font{
+	  font-size: .7rem;
+}
+.display{
+    display: none;
+}
+.wrap{
+    margin:0 auto;
+    width: 18.75rem;
+    overflow: hidden;
+}
+.top-downloadbar{
+    display: block;
+    height: 2.25rem;
+    background: rgba(68,68,68,.95);
+    width: 18.75rem;
+    padding: .125rem 0;
+    position: relative;
+    box-sizing: content-box;
+}
+.download-close{
+    margin-left: .25rem;
+    width: .7rem;
+    height: .7rem;
+    background-image: url(../img/logo_icon/ymHome-19.png);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: cover;
+}
+.download-icon{
+    width: 2rem;
+    height: 2rem;
+    left: 1.25rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: cover;
+    background-image: url(../img/logo_icon/downloadIcon.png);  
+} 
+.download-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    left: 3.5rem;
+    color: #fff;
+    font-size: .6rem;    
+} 
+.download-text-desc{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10%) scale(.5);
+    transform-origin: left center;
+    left: 3.5rem;
+    color: #c7c7c7;
+    font-size: 1rem;    
+}
+.download-go{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .6rem;
+    padding: 0 .375rem;
+    height: 1.125rem;
+    line-height: 1.125rem;
+    border-radius: .125rem;
+    color: #fff;
+    text-decoration: none; 
+    right: .375rem;
+    background: red;   
+}
+.search-input{
+    background-color: #f8f8f8;
+    padding: .325rem .5rem;
+    position: relative;    
+}
+.search-input .search-icon{
+    bottom: 0;
+    color: #999;
+    left: 1.075rem;
+    line-height: 2.15rem;
+    position: absolute;
+    top: 0;    
+}
+.search-input p{
+    background: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #999;
+    font-size: 13PX;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding-left: 1.65rem;
+    width: 100%;    
+}
+.category-nav{
+    border-bottom: 1px solid #e6e6e6;
+    height: 1.75rem;    
+}
+.category-nav li{
+    box-sizing: border-box;
+    color: #999;
+    display: block;
+    float: left;
+    height: 100%;
+    padding: .5rem 0;
+    text-align: center;
+    width: 25%;
+}
+.category-nav span{
+    border-right: 1px solid #e6e6e6;
+    display: block;
+    font-size: 15PX;
+    height: .75rem;
+    line-height: .75rem;
+    width: 100%;
+}
+.category-nav li.focus {
+    color: #000;
+}    
+.category-container{
+    margin-bottom: 2.5rem;
+}
+.content{
+    background: #f8f8f8;
+    overflow: hidden;
+    position: relative;    
+}
+.primary-level{
+    box-sizing: border-box;
+    float: left;
+    width: 45%;    
+}
+.focus{
+    background-color: #fff;
+}
+.content .primary-level>li {
+    height: 2.225rem;
+    line-height: 2.225rem;
+    overflow: hidden;
+    padding: 0 .8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .primary-level>li.focus {
+    background-color: #fff;
+}
+.sub-level-container{
+    background: #fff;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    overflow-x: auto;
+    width: 55%;
+}
+.sub-level-container .sub-level {
+    width: 100%;
+}
+.sub-level-container .sub-level>li {
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    height: 2.225rem;
+    line-height: 2.225rem;
+    padding-left: .5rem;
+}
+.sub-level-container .sub-level a {
+    color: #000;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+/* 底部按钮 */
+.footer-tab{
+    background: #fff;
+    border-top: 1px solid #b0b0b0;
+    bottom: 0;
+    /* box-sizing: border-box; */
+    height: 2.8rem;
+    left: 50%;
+    margin-left: -9.4rem;
+    position: fixed;
+    width: 18.7rem;
+    z-index: 3;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.footer-tab .tab-item{
+    width: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #b0b0b0;
+}
+.footer-tab .tab-item p:nth-child(1){
+    font-size: 1.15rem;
+}
+.footer-tab .tab-item p:nth-child(2){
+    font-size: 0.6rem;
+}

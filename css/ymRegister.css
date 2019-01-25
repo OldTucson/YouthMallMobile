@@ -1,0 +1,326 @@
+/* < 公共样式 > */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+/* < /公共样式 > */
+.active {
+  background: #444 !important;
+}
+.hide {
+  display: none;
+}
+.main-wrap {
+  padding: 0 1.875rem;
+  max-width: 18.75rem;
+  margin: auto;
+}
+.main-wrap .error {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 10PX;
+  box-sizing: border-box;
+  color: #fff;
+  display: none;
+  font-size: 0.6rem;
+  left: 50%;
+  margin-left: -25%;
+  margin-top: -45PX;
+  padding: 15PX;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  width: 50%;
+  z-index: 100;
+}
+.main-wrap #register-page .top-operation-bar,
+.main-wrap #backPwByPhone-page .top-operation-bar {
+  display: flex;
+  font-size: 0.85rem;
+  margin-top: 1.25rem;
+}
+.main-wrap #register-page .top-operation-bar .icon-goback,
+.main-wrap #backPwByPhone-page .top-operation-bar .icon-goback {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.main-wrap #register-page .top-operation-bar .tob-bar-tit,
+.main-wrap #backPwByPhone-page .top-operation-bar .tob-bar-tit {
+  width: 12.5rem;
+  text-align: center;
+}
+.main-wrap #register-page #reg-form,
+.main-wrap #backPwByPhone-page #reg-form,
+.main-wrap #register-page #back-phone-form,
+.main-wrap #backPwByPhone-page #back-phone-form {
+  margin-top: 2.5rem;
+}
+.main-wrap #register-page #reg-form .form-group,
+.main-wrap #backPwByPhone-page #reg-form .form-group,
+.main-wrap #register-page #back-phone-form .form-group,
+.main-wrap #backPwByPhone-page #back-phone-form .form-group {
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  height: 1.25rem;
+  line-height: 1rem;
+  font-size: 0.6rem;
+  margin-bottom: 1.55rem;
+}
+.main-wrap #register-page #reg-form .mobile .icon-phone,
+.main-wrap #backPwByPhone-page #reg-form .mobile .icon-phone,
+.main-wrap #register-page #back-phone-form .mobile .icon-phone,
+.main-wrap #backPwByPhone-page #back-phone-form .mobile .icon-phone {
+  margin-right: 0.75rem;
+  font-size: 0.65rem;
+  color: #444444;
+}
+.main-wrap #register-page #reg-form .mobile #countryCodeSelector,
+.main-wrap #backPwByPhone-page #reg-form .mobile #countryCodeSelector,
+.main-wrap #register-page #back-phone-form .mobile #countryCodeSelector,
+.main-wrap #backPwByPhone-page #back-phone-form .mobile #countryCodeSelector {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  width: 3.5rem;
+  font-size: 0.6rem;
+  outline: none;
+}
+.main-wrap #register-page #reg-form .mobile .icon-down,
+.main-wrap #backPwByPhone-page #reg-form .mobile .icon-down,
+.main-wrap #register-page #back-phone-form .mobile .icon-down,
+.main-wrap #backPwByPhone-page #back-phone-form .mobile .icon-down {
+  font-size: 0.7rem;
+  vertical-align: middle;
+}
+.main-wrap #register-page #reg-form .mobile span,
+.main-wrap #backPwByPhone-page #reg-form .mobile span,
+.main-wrap #register-page #back-phone-form .mobile span,
+.main-wrap #backPwByPhone-page #back-phone-form .mobile span {
+  margin-right: 0.5rem;
+}
+.main-wrap #register-page #reg-form .mobile .phone-input,
+.main-wrap #backPwByPhone-page #reg-form .mobile .phone-input,
+.main-wrap #register-page #back-phone-form .mobile .phone-input,
+.main-wrap #backPwByPhone-page #back-phone-form .mobile .phone-input {
+  width: 7rem;
+  border: none;
+  outline: none;
+}
+.main-wrap #register-page #reg-form .verify-code .icon-verification,
+.main-wrap #backPwByPhone-page #reg-form .verify-code .icon-verification,
+.main-wrap #register-page #back-phone-form .verify-code .icon-verification,
+.main-wrap #backPwByPhone-page #back-phone-form .verify-code .icon-verification {
+  margin-right: 0.75rem;
+  color: #444;
+  font-size: 0.75rem;
+}
+.main-wrap #register-page #reg-form .verify-code .code-input,
+.main-wrap #backPwByPhone-page #reg-form .verify-code .code-input,
+.main-wrap #register-page #back-phone-form .verify-code .code-input,
+.main-wrap #backPwByPhone-page #back-phone-form .verify-code .code-input {
+  border: none;
+  outline: none;
+  font-size: 0.6rem;
+}
+.main-wrap #register-page #reg-form .verify-code .get-verification-code,
+.main-wrap #backPwByPhone-page #reg-form .verify-code .get-verification-code,
+.main-wrap #register-page #back-phone-form .verify-code .get-verification-code,
+.main-wrap #backPwByPhone-page #back-phone-form .verify-code .get-verification-code {
+  background-color: #b0b0b0;
+  border-radius: 0.625rem;
+  color: #fff;
+  float: right;
+  font-size: 0.55rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  margin-top: -0.2rem;
+  padding: 0 0.4rem;
+  cursor: pointer;
+}
+.main-wrap #register-page #reg-form .password,
+.main-wrap #backPwByPhone-page #reg-form .password,
+.main-wrap #register-page #back-phone-form .password,
+.main-wrap #backPwByPhone-page #back-phone-form .password {
+  line-height: 1rem;
+}
+.main-wrap #register-page #reg-form .password .password-input,
+.main-wrap #backPwByPhone-page #reg-form .password .password-input,
+.main-wrap #register-page #back-phone-form .password .password-input,
+.main-wrap #backPwByPhone-page #back-phone-form .password .password-input {
+  width: 10rem;
+  background: transparent;
+  border: none;
+  font-size: 0.6rem;
+}
+.main-wrap #register-page #reg-form .password .icon-password,
+.main-wrap #backPwByPhone-page #reg-form .password .icon-password,
+.main-wrap #register-page #back-phone-form .password .icon-password,
+.main-wrap #backPwByPhone-page #back-phone-form .password .icon-password {
+  margin-right: 0.75rem;
+  font-size: 0.7rem;
+  color: #444444;
+  vertical-align: middle;
+}
+.main-wrap #register-page #reg-form .password .passwordEyeIcon,
+.main-wrap #backPwByPhone-page #reg-form .password .passwordEyeIcon,
+.main-wrap #register-page #back-phone-form .password .passwordEyeIcon,
+.main-wrap #backPwByPhone-page #back-phone-form .password .passwordEyeIcon {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2rem;
+}
+.main-wrap #register-page #reg-form .password .passwordEyeIcon .icon-visible,
+.main-wrap #backPwByPhone-page #reg-form .password .passwordEyeIcon .icon-visible,
+.main-wrap #register-page #back-phone-form .password .passwordEyeIcon .icon-visible,
+.main-wrap #backPwByPhone-page #back-phone-form .password .passwordEyeIcon .icon-visible,
+.main-wrap #register-page #reg-form .password .passwordEyeIcon .icon-invisible,
+.main-wrap #backPwByPhone-page #reg-form .password .passwordEyeIcon .icon-invisible,
+.main-wrap #register-page #back-phone-form .password .passwordEyeIcon .icon-invisible,
+.main-wrap #backPwByPhone-page #back-phone-form .password .passwordEyeIcon .icon-invisible {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+.main-wrap #register-page #reg-form .password .passwordEyeIcon .icon-visible,
+.main-wrap #backPwByPhone-page #reg-form .password .passwordEyeIcon .icon-visible,
+.main-wrap #register-page #back-phone-form .password .passwordEyeIcon .icon-visible,
+.main-wrap #backPwByPhone-page #back-phone-form .password .passwordEyeIcon .icon-visible {
+  display: none;
+}
+.main-wrap #register-page #reg-form .invite-code .icon-haoyou,
+.main-wrap #backPwByPhone-page #reg-form .invite-code .icon-haoyou,
+.main-wrap #register-page #back-phone-form .invite-code .icon-haoyou,
+.main-wrap #backPwByPhone-page #back-phone-form .invite-code .icon-haoyou {
+  margin-right: 0.75rem;
+  font-size: 0.7rem;
+  color: #444444;
+  vertical-align: middle;
+}
+.main-wrap #register-page #reg-form .invite-code .invite-input,
+.main-wrap #backPwByPhone-page #reg-form .invite-code .invite-input,
+.main-wrap #register-page #back-phone-form .invite-code .invite-input,
+.main-wrap #backPwByPhone-page #back-phone-form .invite-code .invite-input {
+  width: 10rem;
+  background: transparent;
+  border: none;
+  font-size: 0.6rem;
+}
+.main-wrap #register-page #reg-form .img-check,
+.main-wrap #backPwByPhone-page #reg-form .img-check,
+.main-wrap #register-page #back-phone-form .img-check,
+.main-wrap #backPwByPhone-page #back-phone-form .img-check {
+  margin-top: 1rem;
+}
+.main-wrap #register-page #reg-form .img-check .img-check-header,
+.main-wrap #backPwByPhone-page #reg-form .img-check .img-check-header,
+.main-wrap #register-page #back-phone-form .img-check .img-check-header,
+.main-wrap #backPwByPhone-page #back-phone-form .img-check .img-check-header {
+  display: flex;
+  justify-content: space-between;
+  color: #444;
+  font-size: 0.5rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+.main-wrap #register-page #reg-form .img-check .img-check-header .in,
+.main-wrap #backPwByPhone-page #reg-form .img-check .img-check-header .in,
+.main-wrap #register-page #back-phone-form .img-check .img-check-header .in,
+.main-wrap #backPwByPhone-page #back-phone-form .img-check .img-check-header .in {
+  color: #d0021b;
+}
+.main-wrap #register-page #reg-form .img-check .img-check-main .img-check-pics,
+.main-wrap #backPwByPhone-page #reg-form .img-check .img-check-main .img-check-pics,
+.main-wrap #register-page #back-phone-form .img-check .img-check-main .img-check-pics,
+.main-wrap #backPwByPhone-page #back-phone-form .img-check .img-check-main .img-check-pics {
+  width: 100%;
+  display: flex;
+}
+.main-wrap #register-page #reg-form .img-check .img-check-main .img-check-pics li,
+.main-wrap #backPwByPhone-page #reg-form .img-check .img-check-main .img-check-pics li,
+.main-wrap #register-page #back-phone-form .img-check .img-check-main .img-check-pics li,
+.main-wrap #backPwByPhone-page #back-phone-form .img-check .img-check-main .img-check-pics li {
+  transform: scale(0.91);
+  height: 3.75rem;
+  width: 3.75rem;
+  border: 1px solid #e0e0e0;
+}
+.main-wrap #register-page #reg-form .img-check .img-check-main .img-check-pics li img,
+.main-wrap #backPwByPhone-page #reg-form .img-check .img-check-main .img-check-pics li img,
+.main-wrap #register-page #back-phone-form .img-check .img-check-main .img-check-pics li img,
+.main-wrap #backPwByPhone-page #back-phone-form .img-check .img-check-main .img-check-pics li img {
+  width: 100%;
+  height: 100%;
+}
+.main-wrap #register-page #reg-form .registerbtn,
+.main-wrap #backPwByPhone-page #reg-form .registerbtn,
+.main-wrap #register-page #back-phone-form .registerbtn,
+.main-wrap #backPwByPhone-page #back-phone-form .registerbtn,
+.main-wrap #register-page #reg-form .backPwBtn,
+.main-wrap #backPwByPhone-page #reg-form .backPwBtn,
+.main-wrap #register-page #back-phone-form .backPwBtn,
+.main-wrap #backPwByPhone-page #back-phone-form .backPwBtn {
+  background-color: #b0b0b0;
+  border-radius: 0.1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  height: 1.75rem;
+  margin-top: 1rem;
+  width: 15rem;
+  border: none;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.main-wrap #register-page #reg-form .check-info,
+.main-wrap #backPwByPhone-page #reg-form .check-info,
+.main-wrap #register-page #back-phone-form .check-info,
+.main-wrap #backPwByPhone-page #back-phone-form .check-info {
+  display: flex;
+  justify-content: center;
+  color: #444;
+  font-size: 0.4rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+.main-wrap #register-page #reg-form .check-info .check,
+.main-wrap #backPwByPhone-page #reg-form .check-info .check,
+.main-wrap #register-page #back-phone-form .check-info .check,
+.main-wrap #backPwByPhone-page #back-phone-form .check-info .check {
+  margin: 0.1rem 0.2rem 0 0;
+  width: 0.6rem;
+  height: 0.6rem;
+  border: 1px solid #444;
+  border-radius: 50%;
+  position: relative;
+}
+.main-wrap #register-page #reg-form .check-info .check .icon-checked,
+.main-wrap #backPwByPhone-page #reg-form .check-info .check .icon-checked,
+.main-wrap #register-page #back-phone-form .check-info .check .icon-checked,
+.main-wrap #backPwByPhone-page #back-phone-form .check-info .check .icon-checked {
+  font-size: 0.6rem;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+.main-wrap #register-page #reg-form .check-info a,
+.main-wrap #backPwByPhone-page #reg-form .check-info a,
+.main-wrap #register-page #back-phone-form .check-info a,
+.main-wrap #backPwByPhone-page #back-phone-form .check-info a {
+  text-decoration: underline;
+  color: #c00;
+}
+/*# sourceMappingURL=ymRegister.css.map */

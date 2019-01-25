@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/myOrder.css">
+    <link rel="stylesheet" href="css/topBar.css">
+    <link rel="stylesheet" href="icon/index_icon/iconfont.css">
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="lib/cookie.js"></script>
+    <script src="lib/indexRem.js"></script>
+    <script src="lib/jquery.lazyload.js"></script>
+    <script src="js/myOrder.js"></script>
+</head>
+
+<body>
+    <!-- 通用顶部app下载 -->
+    <div class="top-downloadbar-box">
+        <div class="top-downloadbar">
+            <a class="download-close" href="javascript:void(0);"></a>
+            <span class="download-icon"></span>
+            <span class="download-text">Youth Mall!潮流商城</span>
+            <p class="download-text-desc">新用户送惊喜礼包</p>
+            <a href="javascript:void(0);" class="download-go">立即打开</a>
+        </div>
+    </div>
+    <!-- 主体内容 -->
+    <div class="main-wrap">
+        <!-- 删除订单遮罩层 -->
+        <div id="dialog-wrapper" class="dialog-wrapper delete-order">
+            <div class="dialog-box" style="top: 50%; margin-top: -74px;">
+                <div class="dialog-content">确定删除订单吗？</div>
+                <div class="dialog-footer">
+                    <span class="dialog-left-btn tap-hightlight">取消</span>
+                    <span class="dialog-right-btn tap-hightlight">确定</span>
+                </div>
+            </div>
+        </div>
+        <!-- 确认收货遮罩层 -->
+        <div id="dialog-wrapper" class="dialog-wrapper check-order">
+            <div class="dialog-box" style="top: 50%; margin-top: -74px;">
+                <div class="dialog-content">是否确认收货？</div>
+                <div class="dialog-footer">
+                    <span class="dialog-left-btn tap-hightlight">取消</span>
+                    <span class="dialog-right-btn tap-hightlight">确定</span>
+                </div>
+            </div>
+        </div>
+        <!-- 提醒发货遮罩层 -->
+        <div class="notice-wrapper">
+            您的订单已出发~
+        </div>
+        <!-- 取消订单遮罩层 -->
+        <div class="reason-mask" style="visibility: visible;">
+            <div class="reason-box">
+                <div class="box-head"><span class="box-cmp">完成</span></div>
+                <div class="swiper-container box-main swiper-container-vertical">
+                    <ul class="swiper-wrapper" style="transform: translate3d(0px, 61.6px, 0px); transition-duration: 0ms;">
+                        <li class="swiper-slide swiper-slide-active" data-reason-id="1" style="height: 30.8px;"><span>支付不成功</span></li>
+                        <li class="swiper-slide swiper-slide-next" data-reason-id="2" style="height: 30.8px;"><span>现在不想购买</span></li>
+                        <li class="swiper-slide" data-reason-id="3" style="height: 30.8px;"><span>订单价格有问题</span></li>
+                        <li class="swiper-slide" data-reason-id="4" style="height: 30.8px;"><span>修改订单信息</span></li>
+                        <li class="swiper-slide" data-reason-id="5" style="height: 30.8px;"><span>错误或重复下单</span></li>
+                        <li class="swiper-slide" data-reason-id="6" style="height: 30.8px;"><span>忘记使用优惠劵或有货币</span></li>
+                        <li class="swiper-slide" data-reason-id="7" style="height: 30.8px;"><span>等待发货时间过长</span></li>
+                        <li class="swiper-slide" data-reason-id="8" style="height: 30.8px;"><span>商品价格较贵</span></li>
+                        <li class="swiper-slide" data-reason-id="9" style="height: 30.8px;"><span>运费过高</span></li>
+                        <li class="swiper-slide" data-reason-id="10" style="height: 30.8px;"><span>其他</span></li>
+                    </ul>
+                    <div class="active-mask"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <!-- 顶部导航栏 -->
+            <header class="main-header">
+                <a href="javascript:history.go(-1);" class="nav-back">&#139;</a>
+                <span class="iconfont nav-home icon-liebiao"></span>
+                <p class="nav-title">我的订单</p>
+                <div class="homebutton">
+                    <div class="ul-arr"></div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-shouye1-copy"></i>
+                                <span>首页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-icon_category"></i>
+                                <span>分类</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-gouwuche"></i>
+                                <span>购物车</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-weibiaoti-_huabanfuben"></i>
+                                <span>我的</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <!-- 主体内容 -->
+            <div class="good-list-page">
+                <a class="fraud-tip" href="javascript:;">
+                    <span class="learn-more">&#155;</span>
+                    <span class="tip-title">关于防诈骗的重要提醒</span>
+                    <span class="tip-content">有货不会以任何理由要求您退货退款，请您提高警惕。
+                    </span>
+                </a>
+                <ul id="order-nav" class="order-nav clearfix">
+                    <li class="tap-hightlight active allorder">
+                        <a class="nav-tap">全部<span class="order-num"></span></a>
+                    </li>
+                    <li class="tap-hightlight orderfilter" data-type="0">
+                        <a class="nav-tap">待付款<span class="order-num"></span></a>
+                    </li>
+                    <li class="tap-hightlight orderfilter" data-type="1">
+                        <a class="nav-tap">待发货<span class="order-num"></span></a>
+                    </li>
+                    <li class="tap-hightlight orderfilter" data-type="2">
+                        <a class="nav-tap">待收货<span class="order-num"></span></a>
+                    </li>
+                </ul>
+                <div id="order-container" class="order-container">
+                    <!-- 没有订单 -->
+                    <div class="no-order">
+                        <div class="icon"></div>
+                        <span>你还没有订单!</span>
+                        <a class="walk-way" href="new_arrive.html">随便逛逛</a>
+                    </div>
+                    <div class="firstscreen-orders">
+                        
+                    </div>
+                </div>
+                <!-- footer -->
+                <footer class="ym-footer" style="margin-bottom: 59px; display: block;">
+                    <p class="op-row">
+                        <span class="checkInModel">Hi,</span>
+                        <a class="user-name checkInModel" href="#">YOHO-43b19e9b7</a>
+                        <a class="loginBtn checkOutModel" href="ymLoginByUser.html">登录</a>
+                        <span class="sep-line">|</span>
+                        <a href="javascript:;" class="checkOutBtn checkInModel">退出</a>
+                        <a href="ymRegister.html" class="logisterBtn checkOutModel">注册</a>
+                        <span class="back-to-top">
+                            回到顶部
+                            <i class="iconfont icon-jiantoushang"></i>
+                        </span>
+                    </p>
+                    <div class="float-top "></div>
+                    <p></p>
+                    <address class="copyright">
+                        CopyRight©2007-2018 南京新与力文化传播有限公司
+                    </address>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

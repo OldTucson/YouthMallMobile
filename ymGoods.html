@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+     maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+</head>
+<script src="lib/rem.js"></script>
+<link rel="stylesheet" href="css/ymDetail.css">
+<link rel="stylesheet" href="font_icons/iconfont.css">
+<link rel="stylesheet" href="icon/index_icon/iconfont.css">
+<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+<body>
+    <div class="top-downloadbar" id="top-downloadbar">
+        <a href="javascript:void(0);" class="download-close" id="download-close"></a>
+        <span class="download-icon"></span>
+        <span class="download-text">Yoho!Buy有货</span>
+        <p class="download-text-desc">新用户送惊喜礼包</p>
+        <a class="download-go" id="download-go" 
+        href="https://union.yoho.cn/union/app-downloads.html?union_type=100000000000349&amp;client_id=1976823692&amp;openby:yohobuy={&quot;action&quot;:&quot;go.list&quot;,&quot;params&quot;:{&quot;0&quot;:&quot;/sd918_5726-gd1,3&quot;,&quot;standard&quot;:&quot;918_5726&quot;,&quot;gender&quot;:&quot;1,3&quot;,&quot;title&quot;:&quot;板鞋/滑板鞋&quot;,&quot;actiontype&quot;:&quot;0&quot;,&quot;firstProductSkn&quot;:&quot;51775544&quot;,&quot;type&quot;:&quot;default&quot;}}">立即打开</a>
+    </div>
+    <header class="yh-header">
+        <a href="javascript:history.go(-1)" class="iconfont icon-zuojiantou nav-back"></a>
+        <p class="nav-title">商品详情</p>
+        <span class="iconfont icon-kinds nav-home" id="home-button"></span>
+        <div class="squre"></div>
+        <ul id="home-list">
+            <li>
+                <a href="./index_boy.html">
+                    <i class="iconfont icon-shouyetianchong"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="./ymCate.html">
+                    <i class="iconfont icon-fenlei"></i>
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" rel="nofollow" id="gwc2">
+                    <i class="iconfont icon-gouwuche"></i>
+                    <span>购物车</span>
+                </a>
+            </li>
+            <li>
+                <a href="./ymHome.html" rel="nofollow">
+                    <i class="iconfont icon-geren"></i>
+                    <span>我的</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="goods-detail-page">
+        <div class="banner-container">
+            <div class="swiper-container" id="swiper1" >	
+                <input type="hidden" id="imgNum" value="">
+                <ul class="swiper-wrapper">
+                </ul>
+                <!-- 如果需要分页器 ，此处自定义分页的样式-->
+                <div class="swiper-pagination">
+                </div>
+            </div>	
+        </div>
+        <div id="favorite"></div>
+        <div class="goods-name">
+            <h1 class="name"></h1>
+        </div>
+        <div class="goods-price">
+            <h2 class="current-price"></h2>
+            <h2 class="previous-price"></h2>
+        </div>
+        <ul class="vip-level">
+            <li>
+                <span class="vip-img"></span><span class="vip-price"></span>
+            </li>
+            <li>
+                 <span class="vip-img"></span><span class="vip-price"></span>
+            </li>
+            <li>
+                <span class="vip-img"></span><span class="vip-price"></span>
+            </li>
+        </ul>
+        <div class="enter-store">
+            <a class="store-logo" href="###"><img src="img/logo_icon/vans.jpg" alt="VANS"></a>
+            <a class="store-name" href="###">VANS</a>
+            <a href="###" class="store-link">进入店铺 <i class="iconfont icon-jiantouyou"></i></a>
+        </div>
+        <div class="productdesc">
+            <div class="goodsdesc">
+                <h2>商品信息 <span class="en-title"> PRODUCT INFO</span></h2>               
+                <div class="detail">                    
+                    <div class="column">编号：51955822</div>                   
+                    <div class="column">颜色：黑色/红...</div>                    
+                    <div class="column">性别：通用</div>                    
+                    <div class="column">经典款型：户外夹克</div>                    
+                    <div class="column">衣长：适中</div>                    
+                    <div class="column">袖长：长袖</div>                   
+                    <div class="column">版型：正常</div>
+                    <div class="column">厚度：中</div>
+                </div>
+                <div class="desc-text">
+                    连帽拼色夹克版型，立显休闲百搭范，整体黑色配色，拼红白两色
+                    ，丰富视觉层次感，后幅红色LOGO字母刺绣，提升整体时尚感，
+                    内里加棉，保暖舒适~
+                </div>
+            </div>
+        </div>
+        <div class="price-description">
+            <h2>
+                特别说明
+                <span class="en-title">SPECIAL DESCRIPTION</span>
+            </h2>
+            <div class="price-desc-detail">
+                <p class="price-item-name">广告禁用词</p>
+                <p class="price-item-content">根据新广告法规定，所有页面不得出现广告禁用词。
+                    我们在此郑重表态：支持新广告法，也为了不影响消费者正常购物，我们已经在排查修改；
+                    本页面所有广告禁用词在此声明失效，不作为赔付理由，请为真正的消费者让路。维权是双向的，
+                    希望各位消费者理解，在此感谢！</p>
+                <p class="price-item-name">页面价格</p>
+                <p class="price-item-content">划线价格指商品的吊牌价、品牌指导价或该商品的曾
+                    展示过的销售价等，并非原价，仅供参考。无划线价格指商品的实时销售价，不因表述的差异改变性质
+                    。具体成交价格根据商品参加活动，或会员使用优惠券/码、有货币等发生变化，最终以订单结算页价格为准。</p>
+                <p class="price-item-name">价格异常</p>
+                <p class="price-item-content">可能因为存在系统缓存、页面延迟等异常情况，导致价格、促销或其他类型活动显示异常，商品具体结算信息以订单结算页面显示为准。如您发现此类情况，请立即联系我们客服调整。</p>
+
+                <p class="price-summary">此说明仅当出现价格比较时有效，若商家单独对价格进行说明的，以商家的表述为准。</p>
+            </div>
+        </div>
+    </div>
+    <div class="car-bar">
+        <a id="gwc" class="new-foot-ico" href="###" rel="nofollow">
+            <div class="icon-gouwuche iconfont">
+                <span class="num-tag"></span>
+            </div>
+            <div class="tip">购物车</div>
+        </a>
+        <a class="new-foot-ico store" href="/shop/vans-1284.html">
+            <div class="iconfont icon-shangjia"></div>
+            <div class="tip">品牌店铺</div>
+        </a>
+        <a href="javascript:;" class="new-foot-ico like-btn-c">
+            <div id="likeBtn" class="icon-xiangqufill iconfont "></div>
+            <div class="tip opa">收藏</div>
+            <input type="hidden" value="0" id="btn-fav">
+        </a>
+        <span class="btn-c">
+            <a id="addtoCart" href="javascript:;" class="addto-cart add-to-cart-url">加入购物车</a>
+        </span>
+    </div>
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="lib/swiper/js/swiper.min.js"></script>
+    <script src="lib/jquery.cookie.js"></script>
+    <script src="lib/cookie.js"></script>
+    <script src="lib/jquery.lazyload.js"></script>
+</body>
+<script>
+    $(window).load(function(){
+        console.log(window.location)
+        var search=window.location.search;//?goodid=3&
+        var pattId=/\d+/;
+        const id=search.match(pattId)[0];
+        var userid=$.cookie("id");
+        var car_data=0;
+        console.log("userid="+userid)
+        console.log("id="+id);
+        $.ajax({
+            type:"get",
+            url:"php/detail.php",
+            dataType:"json",
+            data:{
+                id:id
+            },
+            success:function(data){
+                console.log(data)
+                if(data.success==1){
+                    var imgNum=data.list[0].picNum;
+                    console.log(imgNum)
+                    
+                    if(imgNum==1){
+                        $("#swiper1 .swiper-wrapper").append('<li class="swiper-slide"><img class="swiper-lazy" src="img/goods/'+data.list[0].pic+'" alt="" width="100%"></li>');
+                    }else{
+                        for(var i=0;i<imgNum;i++){
+                        // console.log(JSON.parse(data.list[0].pic2)[i])
+                        $("#swiper1 .swiper-wrapper").append('<li class="swiper-slide"><img class="swiper-lazy" src="img/goods/'+JSON.parse(data.list[0].pic2)[i]+'" alt="" width="100%"></li>');
+                        }  
+                    }
+                    $(".goods-name .name").html(data.list[0].goodName);
+                    $(".goods-price .current-price").html("¥"+data.list[0].price);
+                    $(".store-name").text(data.list[0].shop);
+                    if(data.list[0].preSale){
+                        $(".goods-price .previous-price").html("¥"+data.list[0].preSale);
+                    }
+                    var patt=/[\d\.]{1,5}/;
+                    var res=$(".current-price").html().match(patt);//返回一个对象
+                    var a=parseFloat($(".previous-price").html());
+                    // console.log(res)
+                    $(".vip-price").eq(0).html("¥"+(res[0]*0.9).toFixed(2));
+                    $(".vip-price").eq(1).html("¥"+(res[0]*0.8).toFixed(2));
+                    $(".vip-price").eq(2).html("¥"+(res[0]*0.7).toFixed(2));
+                    if(imgNum>1){
+                        var mySwiper = new Swiper ('#swiper1', {
+                            // direction: 'vertical', // 垂直切换选项
+                            loop: true, // 循环模式选项
+                            // 如果需要分页器
+                            effect:"coverflow",
+                            pagination: {
+                            el: '.swiper-pagination'
+                            }
+                        });
+                    }
+                }
+            },
+            error:function(){
+                console.log("error");
+            }
+        });
+        
+        if(userid){
+            $.ajax({
+            type:"get",
+            url:"php/detail2.php",
+            dataType:"json",
+            data:{
+                id:id,
+                userid:userid
+            },
+            success:function(data){
+                console.log(typeof(data),data)//显示number类型
+                if(data==1){//已收藏
+                    $(".like-btn-c").children().eq(0).css({
+                        color:"red"
+                    });
+                    $(".like-btn-c").children().eq(1).html("已收藏");
+                    $("#btn-fav").val(1);
+                    
+                }else{
+                    $(".like-btn-c").children().eq(0).css({
+                        color:"#444"
+                    });
+                    $(".like-btn-c").children().eq(1).html("收藏");
+                    $("#btn-fav").val(0);
+                }
+            },
+            error:function(){
+                console.log("请求失败")
+            }
+        });
+        $.ajax({
+            type:"get",
+            url:"php/detail_car.php",
+            dataType:"json",
+            data:{
+                userid:userid
+            },
+            success:function(data){
+                if(data){
+                    $(".num-tag").css({
+                        display:"block"
+                    }).html(data);
+                    car_data=data;
+                }
+            }
+        });
+        }
+        
+        $(".like-btn-c").click(function(){
+            if(userid){
+                if($("#btn-fav").val()==1){
+                $(".like-btn-c").children().eq(0).css({
+                        color:"#444"
+                    });
+                $(".like-btn-c").children().eq(1).html("收藏");
+                $("#favorite").show().html("取消收藏成功").fadeOut(2000); 
+                $.ajax({
+                    type:"get",
+                    url:"php/fav_del.php",
+                    data:{
+                        id:id,
+                        userid:userid
+                    },
+                    success:function(){    
+                    }
+                }); 
+                $("#btn-fav").val(0);  
+            }else{
+                $(".like-btn-c").children().eq(0).css({
+                        color:"red"
+                    });
+                $(".like-btn-c").children().eq(1).html("已收藏");
+                $("#favorite").show().html("收藏成功").fadeOut(2000); 
+                $.ajax({
+                    type:"get",
+                    url:"php/fav_add.php",
+                    data:{
+                        id:id,
+                        userid:userid
+                    },
+                    success:function(){    
+                    }
+                }); 
+                $("#btn-fav").val(1);    
+            }
+            }else{
+                location="./not-login.html";
+            }
+        });
+        //添加到购物车
+        $("#addtoCart").click(function(){
+            if(!userid){
+                location="./not-login.html";
+            }else{
+                $("#favorite").show().html("加入成功").fadeOut(2000);
+                $(".num-tag").css({
+                    display:"block"
+                }).html(++car_data);
+                $.ajax({
+                    type:"get",
+                    url:"php/car_add.php",
+                    data:{
+                        id:id,
+                        userid:userid
+                    },
+                    success:function(){ 
+                    }
+                });
+            }
+        });
+        $("#gwc2").click(function(){
+            if(userid){
+                location="./ymCart.html";
+            }else{
+            //     setTimeout(function(){
+                    location="./not-login.html";
+            //     },2000);
+            }
+        });
+        $("#gwc").click(function(){
+            if(userid){
+                location="./ymCart.html";
+            }else{
+            //     setTimeout(function(){
+                    location="./not-login.html";
+            //     },2000);
+            }
+        });
+    });
+    ;(function($,window,document){
+        $("#download-close").click(function(){
+            $("#top-downloadbar").hide();
+        });
+        $("#home-button").click(function(){
+            console.log($("#home-list").css("display"))
+            if($("#home-list").css("display")=="block"){
+                $(".squre").hide();
+                $("#home-list").hide();
+            }else{
+                $(".squre").show();
+                $("#home-list").show(); 
+            }
+        });
+    })(jQuery,window,document)
+</script>
+</html>

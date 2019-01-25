@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>确认订单</title>
+    <script src="js/zj-js/rem.js"></script>
+    <link rel="stylesheet" href="css/ymOrder.css">
+    <link rel="stylesheet" href="css/ad.css">
+    
+</head>
+
+<body class="width750">
+    <div>
+        <div>
+            <div class="top-downloadbar" id="top-downloadbar"><a href="javascript:void(0);" class="download-close" id="download-close"></a>
+                <span class="download-icon"></span><span class="download-text">Youth Mall!潮流商城</span>
+                <p class="download-text-desc">新用户送惊喜礼包</p><a class="download-go" id="download-go" href="https://union.yoho.cn/union/app-downloads.html?union_type=100000000000349&amp;client_id=814777347&amp;openby:yohobuy={&quot;action&quot;:&quot;go.home&quot;,&quot;params&quot;:{&quot;gender&quot;:&quot;1&quot;,&quot;channel&quot;:&quot;2&quot;}}">立即打开</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrap" id="main-wrap" data-minipath="//m.yohobuy.com/api/wechat/miniapp.jpg?miniapp_type=0&amp;param=%7B%22union_type%22%3A%22%22%7D&amp;miniQrType=0">
+
+
+        <header id="yoho-header" class="yoho-header girls">
+            <a href="ymCart.html" class="iconfont nav-back">&#xe60e;</a>
+            <p class="nav-title">确认订单</p>
+        </header>
+
+        <script type="text/javascript">
+            // var isWechat = /micromessenger/i.test(navigator.userAgent || '');
+            // if (isWechat) {
+            //     document.getElementById('yoho-header').classList.add('hide');
+            // }
+        </script>
+
+
+        <div class="order-ensure-page yoho-page">
+            <input id="cart-token" type="hidden" name="token" value="">
+            <div class="address block address-wrap not-address">
+                <i class="iconfont"></i>
+                <a class="choose" href="location.html">请选择收货地址<span class="iconfont">&#xe62e;</span></a>
+                <div class="info">
+                    <!-- <span class="info-name">歘歘</span>
+                    <span class="info-phone">150****9831</span>
+                    <a href="location.html"><span class="info-address">海南省 省直辖县级行政区划 乐东黎族自治县 国营乐光农场 艾欧尼亚</span></a>
+                    <i class="iconfont"></i> -->
+                </div>
+                <!-- <a class="rest" href="/cart/index/new/selectAddress">其他地址<span class="iconfont"></span></a> -->
+            </div>
+            <section class="dispatch block">
+                <div class="sub-block payment-type">
+                    <h3>
+                        <p>支付方式</p>
+                        <span>在线支付(推荐)</span>
+
+                        <i class="iconfont down">&#xe60b;</i>
+                        <i class="iconfont hide up">&#xe63a;</i>
+                    </h3>
+                    <ul style="display:none">
+                        <li class="chosed">
+                            <span>在线支付(推荐)</span>
+                            <i class="right iconfont icon-cb-radio first" data-id="15" data-payment-type="1">&#xe634;</i>
+                            <i class="schk"></i>
+                        </li>
+                        <li>
+                            <span data-message="部分站点不支持刷卡支付，具体请咨询您当地快递公司">货到付款</span>
+                            <i class="right iconfont icon-radio" data-id="0" data-payment-type="2">&#xe634;</i>
+                            <i class="schk"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub-block delivery-id">
+                    <h3>
+                        <p>配送方式</p>
+                        <span>普通快递：运费¥10</span>
+
+                        <i class="iconfont down">&#xe60b;</i>
+                        <i class="iconfont hide up">&#xe63a;</i>
+                    </h3>
+                    <ul class="dispatch-mode">
+                        <li class="chosed" data-id="1">
+                            <span class="tip">普通快递：运费¥10 </span>
+                            <i class="right iconfont icon-cb-radio first" data-id="1">&#xe634;</i>
+                            <i class="schk"></i>
+                        </li>
+                        <li class="" data-id="2">
+                            <span class="tip">顺丰速运：运费¥15 </span>
+                            <i class="right iconfont icon-radio" data-id="2">&#xe634;</i>
+                            <i class="schk"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub-block dispatch-time">
+                    <h3>
+                        <p>送货时间</p>
+
+                        <span>仅周一至周五送货</span>
+
+                        <i class="iconfont down">&#xe60b;</i>
+                        <i class="iconfont hide up">&#xe63a;</i>
+                    </h3>
+                    <ul>
+                        <li class="dispatch-time-info">快递公司会尽力按您选择的送货时间配送，如遇特殊情况(天气、环境等)无法按您要求时间配送，还请您谅解。</li>
+                        <li data-id="2">
+                            <span>送货时间不限</span>
+                            <i class="right iconfont radio icon-radio first">&#xe634;</i>
+                            <i class="schk"></i>
+                        </li>
+                        <li class="chosed" data-id="1">
+                            <span>仅周一至周五送货</span>
+                            <i class="right iconfont radio icon-cb-radio">&#xe634;</i>
+                            <i class="schk"></i>
+                        </li>
+                        <li data-id="3">
+                            <span>仅双休日/节假日送货</span>
+                            <i class="right iconfont radio icon-radio">&#xe634;</i>
+                            <i class="schk"></i>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="block goods-bottom">
+                <!-- <div class="order-good" data-id="2588182">
+                    <div class="thumb-wrap">
+                        <img class="thumb lazy" data-original="//img12.static.yhbimg.com/goodsimg/2017/08/12/21/02a47412469872358eba2bec90da270a16.jpg?imageMogr2/thumbnail/120x160/background/d2hpdGU=/position/center/quality/60"
+                            src="" style="display: block;">
+                        <p class="tag"></p>
+                    </div>
+                    <div class="deps">
+                        <p class="name row">YOHO!Boy FUTURA 系列 原子球印花滑板板面</p>
+                        <p class="row">
+                            <span class="color">
+                                颜色:白
+                            </span>
+
+                            <span class="size">
+                                尺码:F
+                            </span>
+
+                        </p>
+
+
+                        <p class="row price-wrap">
+                            <span class="price">
+                                ¥149.00
+                            </span>
+                            <span class="count">
+                                ×1
+                            </span>
+                        </p>
+                    </div>
+                </div> -->
+                <div class="goods-num">共<i>1件</i>商品 合计<span>¥149.00</span></div>
+            </section>
+
+            <section class="block">
+                <ul class="sale-invoice">
+                    <li class="coupon">
+                        <a href="/cart/index/new/selectCoupon">
+                            <span class="title">优惠券</span>
+                            <span class="count">
+                                0张可用 已推荐0张
+                            </span>
+                            <span class="coupon-info pull-right">
+                                <span class="coupon-price-info">0.00</span>
+                                <i class="iconfont">&#xe62e;</i>
+                            </span>
+                            <span class="iconfont icon-wenhao coupon-help"></span>
+                        </a>
+                    </li>
+
+                    <li class="coin" data-yoho-coin="0" data-yoho-coin-click="0">
+                        <span class="title">有货币</span>
+                        <span class="desc msg">共0有货币，满100可用</span>
+                        <span class="iconfont icon-wenhao yoho-coin-help"></span>
+                        <span class="coin-check">
+                            <i class="iconfont checkbox icon-radio">&#xe634;</i>
+                            <i class="schk"></i>
+                        </span>
+                    </li>
+
+
+                    <li class="invoice ">
+                        <input type="hidden" class="user-mobile" value="150****9831">
+                        <span class="title">发票</span>
+                        <span class="iconfont checkbox icon-radio">&#xe634;</span>
+                        <i class="schk"></i>
+                        <a id="invoice" class="invoice-info" href="/cart/index/new/invoiceInfo">
+                            <span class="title">发票信息</span>
+                            <span class="invoice-type"><i class="iconfont"></i></span>
+                        </a>
+                    </li>
+
+                    <li class="no-print-price">
+                        <span class="title">不打印价格</span>
+                        <span class="desc">送朋友可不打印价格哦</span>
+                        <span class="check">
+                            <i class="iconfont checkbox icon-radio">&#xe634;</i>
+                            <i class="schk"></i>
+                        </span>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="price-cal block">
+                <ul class="total">
+                    <li>
+                        <p>商品金额</p>
+                        <span class="s-1">149.00</span>
+                    </li>
+                    <li>
+                        <p>运费</p>
+                        <span>￥0.00</span>
+                    </li>
+                    <li>
+                        <p>优惠券</p>
+                        <span>￥0.00</span>
+                    </li>
+                </ul>
+                <div class="price-cost">
+                    实付金额
+                    
+                    <span class="s-1">140.00</span>
+                </div>
+            </section>
+            <div class="bill">
+                您需要支付：<span>¥</span><span class="s-1">140.00</span>
+                <a href="myOrder.html">提交订单</a>
+            </div>
+
+            <div class="yoho-coin-help-dialog-bg"></div>
+            <div class="yoho-coin-help-dialog">
+                <div class="yoho-coin-title">有货币使用条件：</div>
+                <div class="yoho-coin-content">
+                    <p>1.订单金额大于20元（含）</p>
+                    <p>2.有货币数量大于100个（含）</p>
+                    <p>3.有货币支付不得超过每笔订单应付金额的50%</p>
+                    <p>备注：使用有货币数量为100的整数倍，100有货币抵1元。</p>
+                </div>
+                <div class="yoho-coin-footer">知道了</div>
+            </div>
+
+            <input type="hidden" id="product-sku" name="product-sku" value="">
+            <div id="conponDialogWrapper" class="dialog-wrapper conpon-diaalog-wrapper">
+                <div class="dialog-box" style="top: 50%; margin-top: -119px;">
+                    <div class="dialog-header">优惠券使用规则</div>
+                    <div class="dialog-content">1.店铺券、活动券、运费券可叠加使用，叠加时优先抵用店铺券;<br>2.不同店铺的店铺券可叠加使用，同店铺的店铺券不可叠加使用。</div>
+                    <div class="dialog-footer">
+                        <span class="dialog-center-btn tap-hightlight" id="conponDialogCancel">知道了</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 结算提示框 -->
+        <div id="yoho-order-bg" class="yoho-order-bg">
+            <div class="order-tip-box">
+                <div class="order-tip-msg">
+                </div>
+                <div class="order-tip-btn-group">
+                </div>
+            </div>
+        </div>
+        <!-- /结算提示框 -->
+
+        
+    </div>
+
+    <div id="yoho-tip" class="yoho-tip"></div>
+    <a id="yoho-app-link" href="javascript:;" style="display:none !important;"></a>
+    
+    <script src="js/zj-js/jquery-1.11.3.js"></script>
+    <script src="js/zj-js/cookie.js"></script>
+    <script src="js/zj-js/ymOrder.js"></script>
+</body>
+
+</html>

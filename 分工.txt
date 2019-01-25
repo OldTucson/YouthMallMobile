@@ -1,0 +1,38 @@
+栗赛
+首页		index.html
+新品到着(通用) new_arrive.html
+折扣专区(通用) ymDiscount.html
+热销排行(通用)  ymHotRank.html
+商品列表页面(通用)  ymList.html
+
+郭志阳 崔丽明
+逛  ymGuang.html
+礼遇(通用)  ymFeature_ly.html
+新人专享 ymFeature_zx.html
+
+袁浩
+登陆注册 ymL&G.html
+欢迎页面  ymWel.html
+商品搜索页面  ymSearch.html
+
+张健
+品牌分类  ymBrands.html
+购物车 ymCart.html
+结算页面 ymOrder.html
+
+关耀宗
+商品详情  ymGoods.html
+店铺详情  ymShop.html
+
+李洋
+个人中心 ymHome.html
+分类页面  ymCate.html
+
+
+不知道是否是新页面看浏览器上面url
+
+想不出来命名看源码 
+不懂布局看源码
+所有轮播用swiper
+
+一样的页面先写出一个通用的

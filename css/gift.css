@@ -1,0 +1,562 @@
+.gift-advance-page .gift-advance-good {
+    border-bottom: 1px solid #e0e0e0;
+    height: 5rem;
+    margin-left: .85rem;
+    padding: .5rem 0;
+    position: relative
+}
+
+.gift-advance-page .advance-block:last-child .gift-advance-good:last-child {
+    border-bottom: 1px solid #e0e0e0
+}
+
+.gift-advance-page .thumb-wrap {
+    float: left;
+    height: 4rem;
+    position: relative;
+    width: 3rem
+}
+
+.gift-advance-page .thumb-wrap .thumb {
+    height: 100%;
+    width: 100%
+}
+
+.gift-advance-page .tag {
+    background: #eb76aa;
+    bottom: 0;
+    color: #fff;
+    height: .625rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center
+}
+
+.gift-advance-page .tag:before {
+    -webkit-transform: scale(.833);
+    content: "\52A0\4EF7\8D2D";
+    display: block;
+    font-size: .3rem;
+    line-height: .625rem;
+    transform: scale(.833)
+}
+
+.gift-advance-page .deps {
+    margin-left: 3.375rem
+}
+
+.gift-advance-page .gift-advance-good .name {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-size: .7rem;
+    margin-bottom: .5rem;
+    overflow: hidden;
+    width: 11rem
+}
+
+.gift-advance-page .row:nth-child(2) {
+    font-size: .55rem;
+    height: 1.125rem;
+    line-height: 1.125rem
+}
+
+.gift-advance-page .row:nth-child(2)>span {
+    margin-right: .375rem
+}
+
+.gift-advance-page .row:nth-child(3) {
+    position: relative
+}
+
+.gift-advance-page .color,.gift-advance-page .size {
+    color: #b6b6b6
+}
+
+.gift-advance-page .price {
+    color: #f1545b;
+    font-size: .6rem
+}
+
+.gift-advance-page .price.market-price {
+    color: #999;
+    text-decoration: line-through
+}
+
+.gift-advance-page .count {
+    color: #999;
+    font-size: .5rem;
+    margin-left: .55rem
+}
+
+.gift-advance-page .chose {
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    bottom: .5rem;
+    font-size: .65rem;
+    height: 1.45rem;
+    line-height: 1.45rem;
+    position: absolute;
+    right: .5rem;
+    text-align: center;
+    width: 2.2rem
+}
+
+.gift-advance-page .title {
+    background: #f8f8f8;
+    font-size: .6rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    overflow: hidden;
+    padding: 0 .5rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 16rem
+}
+
+.gift-advance-page .gift-block .tag {
+    background: #a1ce4e
+}
+
+.gift-advance-page .gift-block .tag:before {
+    content: "\8D60\54C1"
+}
+
+.width750 .chose-panel .main {
+    padding-bottom: 2.925rem
+}
+
+.width750 .chose-panel .close {
+    font-size: .7rem;
+    height: .875rem;
+    margin: .475rem .475rem 0 0;
+    width: .875rem
+}
+
+.width750 .chose-panel .infos {
+    padding: 0 .875rem
+}
+
+.width750 .chose-panel .basic-info {
+    min-height: 5.55rem;
+    padding-bottom: .875rem
+}
+
+.width750 .chose-panel .thumb-img {
+    min-height: 5.85rem;
+    top: -1.75rem;
+    width: 4.8rem
+}
+
+.width750 .chose-panel .thumb-img .hover {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #000;
+    border: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+
+.width750 .chose-panel .thumb-img .hover img {
+    width: 100%
+}
+
+.width750 .chose-panel .text-info {
+    margin-left: 5.7rem;
+    margin-top: .875rem
+}
+
+.width750 .chose-panel .text-info .name {
+    font-size: .825rem;
+    height: 1.75rem
+}
+
+.width750 .chose-panel .text-info .price {
+    font-size: .7rem
+}
+
+.width750 .chose-panel .text-info .sale-price {
+    font-size: .825rem;
+    margin-right: .45rem
+}
+
+.width750 .chose-panel .text-info .size-info {
+    font-size: .7rem;
+    margin-top: .15rem
+}
+
+.width750 .chose-panel .color-list,.width750 .chose-panel .num,.width750 .chose-panel .size-list {
+    font-size: .825rem;
+    padding-left: 2.35rem
+}
+
+.width750 .chose-panel .color-list>span,.width750 .chose-panel .num>span,.width750 .chose-panel .size-list>span {
+    top: .3rem
+}
+
+.width750 .chose-panel .color-list>span.left-num,.width750 .chose-panel .num>span.left-num,.width750 .chose-panel .size-list>span.left-num {
+    left: 11.125rem;
+    top: .575rem
+}
+
+.width750 .chose-panel .color-list .left-num-discount,.width750 .chose-panel .num .left-num-discount,.width750 .chose-panel .size-list .left-num-discount {
+    left: 11.1rem;
+    top: .6rem;
+    width: 6.1rem
+}
+
+.width750 .chose-panel .color-list,.width750 .chose-panel .size-list {
+    margin: .875rem 0
+}
+
+.width750 .chose-panel .block {
+    height: 1.75rem;
+    line-height: 1.75rem;
+    margin-bottom: .875rem;
+    margin-right: .875rem;
+    max-width: 14.05rem;
+    min-width: 2.35rem;
+    padding: 0 .575rem
+}
+
+.width750 .chose-panel .num {
+    margin-bottom: .575rem
+}
+
+.width750 .chose-panel .num .btn {
+    height: 2.35rem;
+    line-height: 2.35rem;
+    width: 2.35rem
+}
+
+.width750 .chose-panel .good-num {
+    height: 2.35rem;
+    line-height: 2.35rem;
+    width: 3.1rem
+}
+
+.width750 .chose-panel .btn-wrap .btn-sure {
+    font-size: .925rem;
+    height: 2.35rem
+}
+
+.chose-panel {
+    background: rgba(0,0,0,.3);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5
+}
+
+.chose-panel .main {
+    background: #fff;
+    bottom: 0;
+    height: 70%;
+    left: 0;
+    padding-bottom: 2.5rem;
+    position: absolute;
+    right: 0
+}
+
+.chose-panel .close {
+    color: #b1b1b1;
+    float: right;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    position: relative;
+    text-align: center;
+    width: 1.5rem;
+    z-index: 2
+}
+
+.chose-panel .infos {
+    height: 100%;
+    padding: 0 .75rem
+}
+
+.chose-panel .chose-items {
+    height: 60%;
+    overflow: auto
+}
+
+.chose-panel .basic-info {
+    border-bottom: 1px solid #e6e6e6;
+    min-height: 4.75rem;
+    padding-bottom: .75rem;
+    position: relative
+}
+
+.chose-panel .thumb-img {
+    border: 1px solid #e6e6e6;
+    border-radius: 5PX;
+    min-height: 5rem;
+    position: absolute;
+    top: -1.5rem;
+    width: 4.1rem
+}
+
+.chose-panel .text-info {
+    height: auto;
+    margin-left: 4.875rem;
+    margin-top: .75rem
+}
+
+.chose-panel .text-info .seckill-time {
+    bottom: .75rem;
+    float: none;
+    position: absolute;
+    right: 0
+}
+
+.chose-panel .text-info .choosed-info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.chose-panel .text-info .name {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-size: .7rem;
+    height: 1.5rem;
+    overflow: hidden
+}
+
+.chose-panel .text-info .price {
+    display: inline;
+    font-size: .6rem
+}
+
+.chose-panel .text-info .sale-price {
+    color: #d0021b;
+    font-size: .7rem;
+    margin-right: .375rem
+}
+
+.chose-panel .text-info .sale-price.no-price {
+    color: #000
+}
+
+.chose-panel .text-info .market-price {
+    color: #b0b0b0;
+    text-decoration: line-through
+}
+
+.chose-panel .text-info .size-info {
+    color: #444;
+    display: block;
+    font-size: .6rem;
+    margin-top: .125rem
+}
+
+.chose-panel .text-info .hide {
+    display: none
+}
+
+.chose-panel .block-list,.chose-panel .num {
+    font-size: .7rem;
+    overflow: hidden;
+    padding-left: 2rem;
+    position: relative
+}
+
+.chose-panel .block-list input.disabled,.chose-panel .num input.disabled {
+    -webkit-appearance: none;
+    background-color: #fff;
+    border-radius: 0;
+    color: #000;
+    opacity: 1
+}
+
+.chose-panel .block-list>span,.chose-panel .num>span {
+    left: 0;
+    position: absolute;
+    top: .25rem
+}
+
+.chose-panel .block-list>span.left-num,.chose-panel .num>span.left-num {
+    color: #b0b0b0;
+    left: 9.5rem;
+    overflow: hidden;
+    position: absolute;
+    top: .5rem;
+    white-space: nowrap
+}
+
+.chose-panel .block-list span.disabled,.chose-panel .num span.disabled {
+    color: #e6e6e6
+}
+
+.chose-panel .block-list .left-num-discount,.chose-panel .num .left-num-discount {
+    -o-text-overflow: ellipsis;
+    color: #e10;
+    left: 9.5rem;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: .5rem;
+    white-space: nowrap;
+    width: 5.2rem
+}
+
+.chose-panel .block-list {
+    border-bottom: 1px solid #e6e6e6;
+    margin: .75rem 0
+}
+
+.chose-panel .block {
+    border: 1px solid #444;
+    border-radius: 6PX;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: .75rem;
+    margin-right: .75rem;
+    max-width: 12rem;
+    min-width: 2rem;
+    overflow: hidden;
+    padding: 0 .5rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.chose-panel .block.chosed {
+    background: #d0021b;
+    border-color: #e10;
+    color: #fff
+}
+
+.chose-panel .block.zero-stock {
+    border-color: #e0e0e0;
+    color: #e0e0e0
+}
+
+.chose-panel .block.zero-stock.chosed {
+    background: none;
+    background-color: silver;
+    border-color: #e0e0e0;
+    color: #e0e0e0
+}
+
+.chose-panel .num {
+    margin-bottom: .5rem
+}
+
+.chose-panel .num .btn {
+    border: 1px solid #e6e6e6;
+    display: block;
+    float: left;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 2rem
+}
+
+.chose-panel .num .btn.disable {
+    color: #e6e6e6
+}
+
+.chose-panel .good-num {
+    border: 1px solid #e6e6e6;
+    float: left;
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: -1px;
+    padding: 0;
+    text-align: center;
+    width: 2.65rem
+}
+
+.chose-panel .btn-plus {
+    margin-left: -1px
+}
+
+.chose-panel .btn-wrap {
+    bottom: 0;
+    position: fixed;
+    width: 100%
+}
+
+.chose-panel .btn-wrap .btn-sure {
+    background: #d0021b;
+    border: none;
+    color: #fff;
+    font-size: .8rem;
+    height: 2rem;
+    width: 100%
+}
+
+.chose-panel .btn-wrap .btn-sure-buynow {
+    background: #444;
+    border: none;
+    color: #fff;
+    float: left;
+    font-size: .8rem;
+    height: 2rem;
+    width: 50%
+}
+
+.chose-panel .btn-wrap .btn-sure-addtocart {
+    background: #d0021b;
+    border: none;
+    color: #fff;
+    float: left;
+    font-size: .8rem;
+    height: 2rem;
+    width: 50%
+}
+
+.chose-panel .discount-gray {
+    background-color: #e0e0e0
+}
+
+.chose-panel .hover {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #000;
+    border: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    left: 0;
+    position: fixed!important;
+    right: 0;
+    top: 0!important;
+    width: 100%!important;
+    z-index: 999
+}
+
+.chose-panel .hover img {
+    width: 100%
+}
+
+.is-mars-app .chose-panel .block.chosed {
+    background-color: #89b374;
+    border-color: #89b374;
+    color: #fff
+}
+
+.is-mars-app .chose-panel .btn-wrap .btn-sure,.is-mars-app .chose-panel .btn-wrap .btn-sure-addtocart {
+    background-color: #89b374!important;
+    color: #fff
+}

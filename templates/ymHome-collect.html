@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>我的收藏</title>
+	<link rel="stylesheet" href="../css/ymHome.css">
+    <link rel="stylesheet" href="../icon/ymHome_icon/iconfont.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+    <script type="text/javascript" src="../lib/rem.js"></script>
+</head>
+<body class="font">
+
+<div class="wrap">
+	<div class="top-downloadbar">
+	    <a href="" class="download-close"></a>
+	    <span class="download-icon"></span>
+	    <span class="download-text">Yoho!Buy有货</span>
+	    <p class="download-text-desc">新用户送惊喜礼包</p>
+	    <a href="../index.html" class="download-go">立即打开</a>
+	</div>
+	<div class="header">
+		<a href="../ymHome.html" class="iconfont nav-back icon-fanhui1"></a>
+		<span class="iconfont nav-home icon-daohang"></span>
+		<p class="header-title">我的收藏</p>
+		<div class="header-nav display">
+			<div class="nav-arr"></div>
+			<ul>
+				<li>
+					<a href="index.html"></a>
+					<i class="iconfont"></i>
+					<span>首页</span>
+				</li>
+				<li>
+					<a href="ymCate.html"></a>
+					<i class="iconfont"></i>
+					<span>分类</span>
+				</li>
+				<li>
+					<a href="ymCart.html"></a>
+					<i class="iconfont"></i>
+					<span>购物车</span>
+				</li>
+				<li>
+					<a href=""></a>
+					<i class="iconfont"></i>
+					<span>我的</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="yoho-favorite-page yoho-page">
+		<ul class="fav-tab ">
+			<li class="active">收藏的商品</li>
+			<li>收藏的品牌</li>
+		</ul>
+		<div class="fav-content">
+			<div class="fav-type show">
+				<ul class="fav-product-list">
+					<!-- <li>
+						<a href="../ymGoods.html">
+							<div class="fav-img-box">
+								<img src="../img/goods/2.jpg" alt="">
+							</div>
+							<div class="fav-info-list">
+								<h2>gxg.jeans 休闲长大衣</h2>
+								<div class="fav-price">
+									<span class="new-price">¥539.00</span>
+									<span class="fav-price price-underline">¥1699.00</span>
+								</div>
+								<div class="save-price">
+									<span class="del-fav iconfont"></span>
+								</div>
+							</div>
+						</a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/qrcode.js"></script>
+<script src="../js/ymHome.js"></script>
+<script>
+var idCookie = getCookie("id");
+function getCookie(name){
+	
+	var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+	if(arr=document.cookie.match(reg))
+	return unescape(arr[2]);
+	else
+	return null;
+}
+$(window).load(function(){
+    $.ajax({
+        type:"POST",
+        url:"../php/ymHome-collect.php",
+        dataType:"json",
+        data:{
+        	userid:idCookie
+        },
+        success:function(data){
+            console.log(data);
+            if(data["success"]==1){
+                for(var i=0;i<data.list.length;i++){
+                    console.log(data["list"][i]["goodid"]);
+                    var Id=data["list"][i]["goodid"];
+                    $.ajax({
+                    	type:"POST",
+                    	url:"../php/ymHomecot.php",
+                    	dataType:"json",
+                    	data:{
+                    		id:Id
+                    	},
+                    	success:function(data){
+                    		if (data["success"]==1) {
+                    			for(var i=0;i<data.list.length;i++){
+                    				console.log(data["list"][i]["goodName"]);
+                    				$(".fav-product-list").append('<li><a href="../ymGoods.html?Id='+data["list"][i]["Id"]+'"><div class="fav-img-box"><img src="../img/goods/'+data["list"][i]["pic"]+'" alt=""></div><div class="fav-info-list"><h2>'+data["list"][i]["goodName"]+'</h2><div class="fav-price"><span class="new-price">¥'+data["list"][i]["price"]+'</span><span class="fav-price price-underline"></span></div><div class="save-price"><span class="del-fav iconfont"></span></div></div></a></li>')
+                    			}
+                    		}
+                    	}
+                    })
+                }
+            }      
+        },
+        error:function(){
+            console.log(0);
+        }
+    });
+});
+(function(){
+	$(".del-fav").click(function(){
+		$.ajax({
+        	type:"POST",
+        	url:"../php/ymHomecot.php",
+        	dataType:"json",
+        	data:{
+        		id:Id
+        	},
+        	success:function(data){
+        		if (data["success"]==1) {
+        			for(var i=0;i<data.list.length;i++){
+        				console.log(data["list"][i]["goodName"])
+        			}
+        		}
+        	}
+        })
+	})
+})();
+</script>
+</body>
+</html>

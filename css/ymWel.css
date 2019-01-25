@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.main {
+  margin: auto;
+  width: 18.75rem;
+}
+.main #header {
+  padding: 0 0.58rem;
+  width: 100%;
+  height: 2.81rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main #header .logo {
+  width: 8.3rem;
+  height: 2.81rem;
+  background: url("../img/ad/ymWel-logo.png") no-repeat;
+  background-size: 8.31rem;
+  background-position: center center;
+}
+.main #header .search {
+  padding: 0.65rem 0;
+  display: flex;
+}
+.main #header .search .cancel {
+  display: none;
+  height: 1.5rem;
+  width: 2rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+.main #header .search .search-box {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+  height: 1.5rem;
+  width: 9rem;
+  line-height: 1.2rem;
+  padding-left: 0.2rem;
+}
+.main #header .search .search-box input {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  width: 6.4rem;
+}
+.main #header .search .search-box .icon-close {
+  display: none;
+  font-size: 0.9rem;
+  color: #ccc;
+  position: absolute;
+  top: 0.05rem;
+  right: 1.5rem;
+}
+.main #header .search .search-box .icon-search {
+  position: absolute;
+  font-size: 0.9rem;
+  top: 0.1rem;
+  right: 0.4rem;
+  color: #e5e5e5;
+}
+.main #channel {
+  width: 100%;
+  height: 33.33rem;
+  background: url("../img/ad/ymWel-bg.jpg");
+  background-size: cover;
+}
+.main #channel .channel-list {
+  padding-top: 7.5rem;
+}
+.main #channel .channel-list .list {
+  position: relative;
+  background-color: #000;
+  border: 0.25rem solid #fff;
+  color: #fff;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: 2.92rem;
+  line-height: 2.3rem;
+  margin: 0 auto 1.4rem;
+  text-align: center;
+  width: 12.6rem;
+}
+.main #channel .channel-list .list .icon-in {
+  font-size: 0.9rem;
+  position: absolute;
+  right: 0.3rem;
+}
+.main #footer {
+  width: 100%;
+  font-size: 0.7rem;
+}
+.main #footer .op-row {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 0.85rem;
+  line-height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main #footer .op-row .logOrReg a {
+  color: #000;
+}
+.main #footer .op-row .logOrReg span {
+  margin: 0 0.5rem;
+  color: #e0e0e0;
+}
+.main #footer .op-row .back-top .icon-top {
+  font-size: 0.7rem;
+  margin: 0 0.3rem;
+}
+.main #footer .copyright {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #eee;
+  color: #666;
+  font-size: 0.65rem;
+  text-align: center;
+}

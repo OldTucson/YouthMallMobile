@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <title>YOUTH!MALL -年轻人潮流购物中心,时尚潮流购物网站</title>
+  <script src="js/rem2.js"></script>
+  <link rel="stylesheet"
+        href="icon/ymLogin_icon/iconfont.css">
+  <link rel="stylesheet" href="css/ymLogin.css">
+</head>
+
+<body>
+<!-- < 登录 > -->
+<div class="main-wrap">
+  <div id="login-page">
+    <div class="error">
+      手机号输入有错误
+    </div>
+    <!-- < banner > -->
+    <div id="banner-box">
+      <img src="img/ad/login-banner.jpg" alt="">
+      <div class="banner-info">
+        <div class="top-operation-bar">
+          <a href="javascript:history.go(-1);">
+            <i class="iconfont icon-goback">
+
+            </i>
+          </a>
+          <a href="ymRegister.html" class="register">注册</a>
+        </div>
+        <div class="tit">
+          Youth!Mall账号可登录Youth!Mall商城
+          <i class="iconfont icon-Tip"></i>
+        </div>
+      </div>
+    </div>
+    <!-- < /banner > -->
+
+    <!-- < form > -->
+    <div id="login">
+
+      <!-- < 用户名登录 >-->
+      <div class="user-login">
+        <form id="user-login-form">
+          <div class="form-group username">
+            <i class="iconfont icon-phone"></i>
+            <input type="text" class="user-input"
+                   placeholder="请输入手机号码/邮箱">
+          </div>
+          <div class="form-group password">
+            <i class="iconfont icon-password"></i>
+            <input type="password" class="password-input"
+                   placeholder="请输入密码">
+            <div class="passwordEyeIcon">
+              <i class="iconfont icon-invisible"></i>
+              <i class="iconfont icon-visible hide"></i>
+            </div>
+          </div>
+          <div class="img-check">
+            <div class="img-check-header">
+              <span>请将下列图片点击翻转至正向朝上</span>
+              <span class='in'>换一批</span>
+            </div>
+            <div class="img-check-main">
+              <ul class="img-check-pics">
+                <li data-checked="2">
+                  <img src="img/ad/check.jpg" alt="">
+                </li>
+                <li data-checked="2">
+                  <img src="img/ad/check.jpg" alt="">
+                </li>
+                <li data-checked="2">
+                  <img src="img/ad/check.jpg" alt="">
+                </li>
+                <li data-checked="2">
+                  <img src="img/ad/check.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="loginbtn">
+            登录
+          </button>
+        </form>
+      </div>
+      <!-- < /用户名登录 >-->
+
+    </div>
+    <!-- < /form > -->
+
+    <!-- < other > -->
+    <div id="other-info">
+      <a href="ymLoginByPhone.html">手机号码登录</a>
+      <a href="javascript:void(0);" id="backPw">忘记密码？</a>
+    </div>
+    <!-- < /other > -->
+  </div>
+  <div class="mask">
+    <div class="animation-target">
+      <p>
+        Yoho!Family账号可登录YOHO!旗下所有应用（含：Yoho!Buy有货、Yoho!Now、mars、BLK、Yoho!Store）
+      </p>
+      <div class="button-group">
+        好
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="backPassword">
+  <div class="backPassword-mask">
+
+  </div>
+  <div class="byPath">
+    <a href="backPwByEmail.html" class="byEmail">
+      邮箱找回
+    </a>
+    <a href="backPwByPhone.html" class="byPhone">
+      手机找回
+    </a>
+  </div>
+</div>
+<script src="js/zepto.1.2.0.js"></script>
+<script src="js/touch.js"></script>
+<script src='lib/cookie.js'></script>
+<script src="js/ymLoginByUser.js"></script>
+</body>
+
+</html>

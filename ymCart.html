@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <script src="js/zj-js/rem.js"></script>
+    <link rel="stylesheet" href="css/ymCart.css">
+</head>
+<body class="width750">
+    <div class="main-wrap" id="main-wrap">
+        <header id="yoho-header" class="yoho-header boys">
+            <a href="javascript:;" class="nav-back iconfont">&#xe60e;</a>
+            <p class="nav-title">购物车</p>
+            <span class="nav-btn">
+            </span>
+        </header>
+        <div class="shopping-cart-page yoho-page ">
+            <div class="cart-box">
+                <div class="cart-zero">
+                    <i class="icon iconfont">&#xe606;</i>
+                    <p>您的购物车暂无商品</p>
+                    <a href="new_arrive.html">随便逛逛</a>
+                </div>
+                <div class="cart-nav clearfix more "  style="display:none">
+                    <div class="nav-item active" id="common-cart-nav" data-type="ordinary">
+                        <span>普通商品(0)</span>
+                    </div>
+                    <button class="btn-edit"></button>
+                </div>
+                <div class="cart-content normal-good active" style="display:none">
+                    <a class="tips clearfix" href="">
+                        <div>
+                            再买¥151.00即可免运费
+                        </div>
+                        <span class="iconfont free-shipping">去凑单&nbsp;&#xe62e;</span>
+                    </a>
+                    <div class="normal-box">
+                        <div class="cart-brand box good-pools-data">
+                            <div class="good-list">
+                                <!-- <div class="good-item is-checked" data-promotion="" data-id="3582774" data-skn="51962522"
+                                    data-mnum="1" data-link="//m.yohobuy.com/product/51962522.html" data-activityid=""
+                                    data-poolbatchno="">
+                                    <div class="opt">
+                                        <i class="iconfont chk select checked1">&#xe634;</i>
+                                        <i class="chk edit schk"></i>
+                                    </div>
+                                    <div class="good-new-info">
+                                        <a href="javascript:;" class="img-a">
+                                            <div class="img">
+                                                <img class="thumb lazy" data-original="//img12.static.yhbimg.com/goodsimg/2018/11/20/15/0252f014867a5331fca104b6f9390fad75.jpg?imageMogr2/thumbnail/120x160/background/d2hpdGU=/position/center/quality/60/format/webp"
+                                                    alt="" src="" style="display: block;">
+                                            </div>
+                                        </a>
+                                        <div class="info">
+                                            <div class="fixed-height">
+                                                <div class="intro intro-name">
+                                                    <div class="name-row">
+                                                        <div class="name">
+                                                            <a href="javascript:;">ChiZhang 黑色白五星卫衣</a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="color-size-row"><span class="color">颜色:黑色</span><span
+                                                            class="size">尺码:F</span></p>
+                                                </div>
+                                                <div class="intro intro-edit">
+                                                    <div class="edit-box">
+                                                        <div class="num-opt">
+                                                            <a href="javascript:;" class="btn btn-opt-minus disabled"><span
+                                                                    class="iconfont">&#xe633;</span></a>
+                                                            <input type="text" class="good-num" disabled="true" value="1"
+                                                                data-min="1" data-max="1">
+                                                            <a href="javascript:;" class="btn btn-opt-plus disabled"><span
+                                                                    class="iconfont">&#xe608;</span></a>
+                                                        </div>
+                                                        <div class="edit-size-info  edit-size-info-notop ">
+                                                            <div class="txt">颜色:黑色 尺码:F</div>
+                                                            <div class="down">
+                                                                <i class="iconfont">&#xe60b;</i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="count">x<span>1</span></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="price">￥
+                                                    <span class="market-price">100.00</span>
+                                                </div>
+                                                <div class="tags">
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-gift-box box">
+                        <div class="gift-item freebie">
+                            <div class="flag">
+                                <i class="iconfont gift">&#xe65b;</i>
+                            </div>
+                            <div class="content">
+                                <div class="info">赠品</div>
+                                <div class="opt to-gift no-storage">
+                                    <a href="javascript:;">已抢光</a><i class="iconfont to-arrow"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gift-item advanceBuy">
+                            <div class="flag">
+                                <i class="iconfont price-gift">&#xe6d3;</i>
+                            </div>
+                            <div class="content">
+                                <div class="info">全场加价购</div>
+                                <div class="opt to-gift ">
+                                    <a href="javascript:;">去换购</a><i class="iconfont to-arrow"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total box">
+                        <div class="price-compute">
+                            <p>总计¥1590.00=商品金额¥1590.00</p>
+                        </div>
+                    </div>
+                    <div class="cart-footer">
+                        <div class="check-all">
+                            <i class="iconfont chk select checked">&#xe634;</i>
+                            <i class="iconfont chk edit allchk"></i>
+                            <p>全选</p>
+                        </div>
+                        <div class="opts edit">
+                            <button class="btn btn-gray btn-fav">移入<br>收藏夹</button>
+                            <button class="btn btn-red btn-del">删除</button>
+                        </div>
+                        <div class="opts bill ">
+                            <div class="total">
+                                <p class="price">总计:¥0.00&nbsp;&nbsp;(0件)</p>
+                                <p class="intro">不含运费</p>
+                            </div>
+                            <button class="btn btn-red btn-balance">结算</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recommend-for-you box hide" style="display: block;">
+                <div id="goods-container" class="goods-container">
+                    <p class="title">
+                        <span>为你优选新品</span>
+                    </p>
+                    <div class="new-goods container clearfix">
+
+                        <div class="good-info " data-good-id="" data-id="51664108" data-bp-id="guang_goodList_YOHO!Boy FUTURA 系列 原子球印花滑板板面_false">
+                            <div class="tag-container clearfix">
+                            </div>
+                            <div class="good-detail-img">
+                                <a class="good-thumb" href="ymGoods.html?goodid=1">
+                                    <img class="lazy" data-original="//img13.static.yhbimg.com/goodsimg/2017/08/12/21/02a47412469872358eba2bec90da270a16.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60/format/webp"
+                                        alt="" src="img/goods/bGood1.jpg " style="display: block;">
+                                </a>
+                                <div class="similar-c">
+                                    <div class="bg"></div>
+                                    <a href="">找相似</a>
+                                </div>
+                            </div>
+                            <div class="good-detail-text">
+                                <div class="name">
+                                    <a href="">YOHO!Boy FUTURA 系列 原子球印花滑板板面</a>
+                                </div>
+                                <div class="price">
+                                    <span class="sale-price ">¥149.00</span>
+                                    <span class="market-price">¥299.00</span>
+                                </div>
+                                <a class="similar-btn iconfont">&#xe62f;</a>
+                            </div>
+                        </div>
+
+                        <div class="good-info " data-good-id="" data-id="51974626" data-bp-id="guang_goodList_VANS Old Skool【Space Voyager】【 NASA 】_false">
+                            <div class="tag-container clearfix">
+                            </div>
+                            <div class="good-detail-img">
+                                <a class="good-thumb" href="ymGoods.html?goodid=2">
+                                    <img class="lazy" data-original="//img11.static.yhbimg.com/goodsimg/2018/10/14/14/013e75dae5c3e5243ae8c48ffbca52196a.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60/format/webp"
+                                        alt="" src="img/goods/bGood2.jpg " style="display: block;">
+                                </a>
+                                <div class="similar-c">
+                                    <div class="bg"></div>
+                                    <a href="">找相似</a>
+                                </div>
+                            </div>
+                            <div class="good-detail-text">
+                                <div class="name">
+                                    <a href="">VANS Old Skool【Space Voyager】【 NASA
+                                        】</a>
+                                </div>
+                                <div class="price">
+                                    <span class="sale-price no-price">¥735.00</span>
+                                </div>
+                                <a class="similar-btn iconfont">&#xe62f;</a>
+                            </div>
+                        </div>
+
+                        <div class="good-info " data-good-id="" data-id="51788146" data-bp-id="guang_goodList_STAYREAL CNY中国新年系列 年年有鱼鼠来宝厚棉卫衣_false">
+                            <div class="tag-container clearfix">
+                            </div>
+                            <div class="good-detail-img">
+                                <a class="good-thumb" href="ymGoods.html?goodid=3">
+                                    <img class="lazy" data-original="//img10.static.yhbimg.com/goodsimg/2018/01/10/15/0107f23a758db7fa7c63e40459075ebd92.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60/format/webp"
+                                        alt="" src="img/goods/bGood3.jpg ">
+                                </a>
+
+
+                                <div class="similar-c">
+                                    <div class="bg"></div>
+                                    <a href="">找相似</a>
+                                </div>
+                            </div>
+                            <div class="good-detail-text">
+                                <div class="name">
+                                    <a href="">STAYREAL CNY中国新年系列 年年有鱼鼠来宝厚棉卫衣</a>
+                                </div>
+                                <div class="price">
+                                    <span class="sale-price no-price">¥499.00</span>
+                                </div>
+                                <a class="similar-btn iconfont">&#xe62f;</a>
+                            </div>
+                        </div>
+                        <div class="good-info " data-good-id="" data-id="51788146" data-bp-id="guang_goodList_STAYREAL CNY中国新年系列 年年有鱼鼠来宝厚棉卫衣_false">
+                            <div class="tag-container clearfix">
+                            </div>
+                            <div class="good-detail-img">
+                                <a class="good-thumb" href="ymGoods.html?goodid=4">
+                                    <img class="lazy" data-original="//img10.static.yhbimg.com/goodsimg/2018/01/10/15/0107f23a758db7fa7c63e40459075ebd92.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60/format/webp"
+                                        alt="" src="img/goods/bGood4.jpg">
+                                </a>
+                                <div class="similar-c">
+                                    <div class="bg"></div>
+                                    <a href="">找相似</a>
+                                </div>
+                            </div>
+                            <div class="good-detail-text">
+                                <div class="name">
+                                    <a href="">STAYREAL CNY中国新年系列 年年有鱼鼠来宝厚棉卫衣</a>
+                                </div>
+                                <div class="price">
+                                    <span class="sale-price no-price">¥499.00</span>
+                                </div>
+                                <a class="similar-btn iconfont">&#xe62f;</a>
+                            </div>
+                        </div>
+                        <div class="good-info " data-good-id="" data-id="51788146" data-bp-id="guang_goodList_STAYREAL CNY中国新年系列 年年有鱼鼠来宝厚棉卫衣_false">
+                            <div class="tag-container clearfix">
+                            </div>
+                            <div class="good-detail-img">
+                                <a class="good-thumb" href="ymGoods.html?goodid=5">
+                                    <img class="lazy" data-original="//img10.static.yhbimg.com/goodsimg/2018/01/10/15/0107f23a758db7fa7c63e40459075ebd92.jpg?imageMogr2/thumbnail/235x314/position/center/quality/60/format/webp"
+                                        alt="" src="img/goods/bGood5.jpg">
+                                </a>
+                                <div class="similar-c">
+                                    <div class="bg"></div>
+                                    <a href="">找相似</a>
+                                </div>
+                            </div>
+                            <div class="good-detail-text">
+                                <div class="name">
+                                    <a href="">STAYREAL CNY中国新年系列 年年有鱼鼠来宝厚棉卫衣</a>
+                                </div>
+                                <div class="price">
+                                    <span class="sale-price no-price">¥499.00</span>
+                                </div>
+                                <a class="similar-btn iconfont">&#xe62f;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chose-panel" data-skn="51974626" style="display: none;">
+                <div class="main">
+                    <div class="close iconfont">&#xe60c;</div>
+                    <div class="infos ">
+                        <div class="basic-info">
+                            <div class="thumb-img">
+                                <img class="thumb" src="">
+                            </div>
+                            <div class="text-info">
+                                <p class="price">
+
+                                    <span class="sale-price no-price">¥735.00</span>
+                                </p>
+                                <p class="not-choose">请选择颜色、尺码</p>
+                                <p class="choosed-info hide"></p>
+                                <p class="size-info hide"></p>
+                                <p class="size-rec hide"></p>
+                            </div>
+                        </div>
+                        <div class="chose-items">
+                            <div class="block-list">
+                                <span class="name">颜色</span>
+                                <ul class="size-row clearfix">
+                                    <li class="block chosed" data-prop-id="color" data-value-id="1220902">橘色</li>
+                                </ul>
+                            </div>
+                            <div class="block-list">
+                                <span class="name">尺码</span>
+                                <ul class="size-row clearfix">
+                                    <li class="block" data-prop-id="size" data-value-id="83">34 1/2码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="90">35码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="96">36码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="94">36 1/2码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="100">37码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="104">38码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="103">38 1/2码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="109">39码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="116">40码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="114">40 1/2码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="122">41码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="125">42码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="123">42 1/2码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="129">43码</li>
+                                    <li class="block" data-prop-id="size" data-value-id="133">44码</li>
+                                </ul>
+                            </div>
+                            <div class="num">
+                                <span class="name">数量</span>
+                                <div class="clearfix">
+                                    <a class="btn btn-minus " href="javascript:void(0);">
+                                        <span class="iconfont ">&#xe633;</span>
+                                    </a>
+                                    <input id="good-num" class="good-num disabled" type="text" value="1" disabled="true">
+                                    <a class="btn btn-plus" href="javascript:void(0);">
+                                        <span class="iconfont ">&#xe608;</span>
+                                    </a>
+                                </div>
+                                <span class="left-num"></span>
+                                <input id="left-num" type="hidden" value="0">
+                                <input id="limitNum" type="hidden" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <button id="chose-btn-sure" class="btn btn-sure">确认</button>
+                    </div>
+                </div>
+            </div>
+            <div class="loading-mask hide">
+                <div class="loading">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="yoho-tip" class="yoho-tip" style="display: none;">您选择的数量不能为零~</div>
+    <div id="dialog-wrapper" class="dialog-wrapper" style="display: none;">
+        <div class="dialog-box " style="top: 50%; margin-top: -63px;">
+            <div class="dialog-content">您确定要从购物车中删除吗？</div>
+                <div class="dialog-footer">
+                    <span class="dialog-left-btn tap-hightlight">取消</span>
+                    <span class="dialog-right-btn tap-hightlight">确定</span>
+                </div>
+        </div>
+    </div>
+
+    
+    <script src="js/zj-js/jquery-1.11.3.js"></script>
+    <script src="js/zj-js/cookie.js"></script>
+    <script src="js/zj-js/ymCart.js"></script>
+</body>
+
+</html>

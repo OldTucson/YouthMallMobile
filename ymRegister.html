@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta charset="UTF-8">
+    <title>YOUTH!MALL -年轻人潮流购物中心,时尚潮流购物网站</title>
+    <script src="js/rem2.js"></script>
+    <link rel="stylesheet" href="icon/ymLogin_icon/iconfont.css">
+    <link rel="stylesheet" href="css/ymRegister.css">
+</head>
+
+<body>
+    <div class="main-wrap">
+        <div id="register-page">
+
+            <div class="error">
+                手机号输入有错误
+            </div>
+            <div class="top-operation-bar">
+                <a href="javascript:history.go(-1);">
+                    <i class="iconfont icon-goback"></i>
+                </a>
+                <div class="tob-bar-tit">
+                    注册
+                </div>
+            </div>
+            <form id="reg-form">
+                <div class="form-group mobile">
+                    <i class="iconfont icon-phone"></i>
+                    <select name="" id="countryCodeSelector">
+          <option value=+61>澳大利亚</option>
+          <option value=+82>韩国</option>
+          <option value=+1>加拿大</option>
+          <option value=+60>马来西亚</option>
+          <option value=+1>美国</option>
+          <option value=+81>日本</option>
+          <option value=+65>新加坡</option>
+          <option value=+44>英国</option>
+          <option value=+86 selected>中国</option>
+          <option value=+853>中国澳门</option>
+          <option value=+886>中国台湾</option>
+          <option value=+852>中国香港</option>
+        </select>
+                    <i class="iconfont icon-down"></i>
+                    <span>|</span>
+                    <input type="text" class="phone-input" name='mobile' placeholder="请输入手机号" data-flag="false">
+                </div>
+                <div class="form-group verify-code">
+                    <i class="iconfont icon-verification"></i>
+                    <input type="text" class="code-input" placeholder="请输入验证码" name='mobile-code'>
+                    <div class="get-verification-code">
+                        获取验证码
+                    </div>
+                </div>
+                <div class="form-group password">
+                    <i class="iconfont icon-password"></i>
+                    <input type="password" class="password-input" placeholder="请输入密码" data-flag="false">
+                    <div class="passwordEyeIcon">
+                        <i class="iconfont icon-invisible"></i>
+                        <i class="iconfont icon-visible hide"></i>
+                    </div>
+                </div>
+                <div class="form-group invite-code">
+                    <i class="iconfont icon-haoyou"></i>
+                    <input type="text" class="invite-input" placeholder="好友潮流口令（非必填）">
+                </div>
+                <div class="img-check" data-flag="false">
+                    <div class="img-check-header">
+                        <span>请将下列图片点击翻转至正向朝上</span>
+                      <span class="in">换一批</span>
+                    </div>
+                    <div class="img-check-main">
+                        <ul class="img-check-pics">
+                            <li data-checked="2">
+                                <img src="img/ad/check.jpg" alt="">
+                            </li>
+                            <li data-checked="2">
+                                <img src="img/ad/check.jpg" alt="">
+                            </li>
+                            <li data-checked="2">
+                                <img src="img/ad/check.jpg" alt="">
+                            </li>
+                            <li data-checked="2">
+                                <img src="img/ad/check.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="registerbtn">
+                    注册
+                </button>
+                <div class="check-info">
+                    <div class="check">
+                        <i class="iconfont icon-checked"></i>
+                    </div>
+                    <p>我已阅读并同意遵守<a href="">Youth!Mall商城服务条款</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/zepto.1.2.0.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/ymRegister.js"></script>
+</body>
+
+</html>

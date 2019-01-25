@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加地址</title>
+    <script src="lib/zj-lib/indexRem.js"></script>
+    <link rel="stylesheet" href="css/ad.css">
+    <link rel="stylesheet" href="css/addlocation.css">
+</head>
+<body class="">
+    <div>
+        <div>
+            <div class="top-downloadbar" id="top-downloadbar"><a href="javascript:void(0);" class="download-close" id="download-close"></a>
+                <span class="download-icon"></span><span class="download-text">Yoho!Buy有货</span>
+                <p class="download-text-desc">新用户送惊喜礼包</p><a class="download-go" id="download-go" href="https://union.yoho.cn/union/app-downloads.html?union_type=100000000000349&amp;client_id=1025709469&amp;openby:yohobuy={&quot;action&quot;:&quot;go.home&quot;,&quot;params&quot;:{&quot;gender&quot;:&quot;1&quot;,&quot;channel&quot;:&quot;2&quot;}}">立即打开</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrap" id="main-wrap" data-minipath="//m.yohobuy.com/api/wechat/miniapp.jpg?miniapp_type=0&amp;param=%7B%22union_type%22%3A%22%22%7D&amp;miniQrType=0">
+        <header id="yoho-header" class="yoho-header boys">
+            <a href="location.html" class="iconfont nav-back">&#xe60e;</a>
+            <p class="nav-title">添加地址</p>
+        </header>
+        <div class="my-address-page yoho-page">
+            <div class="tip">为提高配送时效，请您尽量准确填写四级地址。</div>
+            <div class="my-edit-address-page page-wrap" style="min-height: 614px;">
+                <form class="edit-address">
+                    <input type="hidden" name="_csrf" value="GXXBbKyr-s_uFkX81iLjkaykY0smiSBHjQxg">
+                    <input type="hidden" name="id" value="">
+                    <label class="username">
+                        收 货 人 :
+                        <input type="text" name="consignee" maxlength="21" value="">
+                    </label>
+                    <label class="mobile">
+                        联系电话:
+                        <input type="tel" name="mobile" value="">
+                    </label>
+                    <label class="area">
+                        所在地区:
+                        <input type="hidden" name="area_code" value="">
+                        <input type="text" name="area" value="" readonly="">
+                        <span class="iconfont">&#xe62e;</span>
+                    </label>
+                    <label class="address">
+                        详细地址:
+                        <textarea name="address" maxlength="255"></textarea>
+                    </label>
+                </form>
+                <div class="submit">
+                    保存并使用
+                </div>
+            </div>
+            <div class="my-address-list-page page-wrap hide">
+            </div>
+        </div>
+
+        <div id="vAddressAct">
+            <div class="address-select-component" style="display: none;">
+                <div class="address-select-box">
+                    <div class="component-title"><span class="title">所在地区</span><span class="iconfont close">&#xe60c;</span></div>
+                    <ul class="head-address-ul">
+                        <li class="head-address-li">请选择</li>
+                    </ul>
+                    <div class="address-container">
+                        <div class="address-content">
+                            <ul class="address-ul pro">
+                                <li>北京市</li>
+                                <li>天津市</li>
+                                <li>河北省</li>
+                                <li>山西省</li>
+                                <li>内蒙古自治区</li>
+                                <li>辽宁省</li>
+                                <li>吉林省</li>
+                                <li>黑龙江省</li>
+                                <li>上海市</li>
+                                <li>江苏省</li>
+                                <li>浙江省</li>
+                                <li>安徽省</li>
+                                <li>福建省</li>
+                                <li>江西省</li>
+                                <li>山东省</li>
+                                <li>河南省</li>
+                                <li>湖北省</li>
+                                <li>湖南省</li>
+                                <li>广东省</li>
+                                <li>广西壮族自治区</li>
+                                <li>海南省</li>
+                                <li>重庆市</li>
+                                <li>四川省</li>
+                                <li>贵州省</li>
+                                <li>云南省</li>
+                                <li>西藏自治区</li>
+                                <li>陕西省</li>
+                                <li>甘肃省</li>
+                                <li>青海省</li>
+                                <li>宁夏回族自治区</li>
+                                <li>新疆维吾尔自治区</li>
+                            </ul>
+                            <ul class="address-ul city"></ul>
+                            <ul class="address-ul area1"></ul>
+                            <ul class="address-ul town"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="yoho-tip" class="yoho-tip"></div><a id="yoho-app-link" href="javascript:;" style="display:none !important;"></a>
+
+    
+    <script src="js/zj-js/jquery-1.11.3.js"></script>
+    <script src="js/zj-js/area.js"></script>
+    <script src="js/zj-js/cookie.js"></script>
+    <script src="js/zj-js/addlocation.js"></script>
+    <script>
+
+
+
+        // 数据库修改
+        ;(function(){
+           var name=$(".username").children("input");
+            var mobile=$(".mobile").children("input");
+            var area=$(".area").children("input");
+            var address=$(".address").children("textarea");
+            $(".submit").click(function(){
+                var nameVal=name.val(),
+                    mobileVal=mobile.val(),
+                    areaVal=area.val(),
+                    addressVal=address.val();
+                    console.log(nameVal);
+                var patt=/\d+/;
+                console.log(window.location.search.match(patt))
+                var Id=window.location.search.match(patt)[0];
+                $.ajax({
+                    type: 'POST', //http请求方式为post
+                    url: '../php/ymHomealter.php', //请求的url地址
+                    // dataType: 'json', //预期的服务器响应的数据类型
+                    data: { //需要发送的数据
+                        name: nameVal,
+                        mobile: mobileVal,
+                        area: areaVal,
+                        address: addressVal,
+                        id:Id
+                    },
+                    success:
+                        function(){
+                            console.log("success")
+                        }
+                    ,
+                    error:
+                        function(){
+                            console.log(0)
+                        }
+                    
+                })
+                location.href = "../location.html"
+            })
+        })()
+        
+        //解析URL获取id
+        ;(function(){
+            function GetQueryString(name){
+            　　var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            　　var r = window.location.search.substr(1).match(reg);
+            　　if(r!=null){
+                // console.log(200000);
+                return unescape(r[2]);
+                }else{
+                     return null;
+                }
+            }
+            var myurl=GetQueryString("id");
+                $.ajax({
+                type:"get",
+                url:"../php/ymHome.php",
+                dataType:"json",
+                data:{
+                    id:myurl
+                },
+                success:function(data){
+                    if(data.success==1){
+                        console.log(111);
+                        $(".username").children("input").val(data["list"][0]["username"]);
+                        $(".mobile").children("input").val(data["list"][0]["mobile"]);
+                        $(".area").children("input").val(data["list"][0]["area"]);
+                        $(".address").children("textarea").val(data["list"][0]["address"]);
+                        
+                    }
+                },
+                error:function(){
+                    console.log("error");
+                }
+            });
+        })()
+        </script>
+</body>
+
+</html>

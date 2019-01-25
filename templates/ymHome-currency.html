@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>有货币</title>
+	<link rel="stylesheet" href="../css/ymHome.css">
+    <link rel="stylesheet" href="../icon/ymHome_icon/iconfont.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+    <script type="text/javascript" src="../lib/rem.js"></script>
+</head>
+<body class="font">
+<div class="wrap">
+	<div class="top-downloadbar">
+	    <a href="" class="download-close"></a>
+	    <span class="download-icon"></span>
+	    <span class="download-text">Yoho!Buy有货</span>
+	    <p class="download-text-desc">新用户送惊喜礼包</p>
+	    <a href="../index.html" class="download-go">立即打开</a>
+	</div>
+	<div class="header">
+		<a href="../ymHome.html" class="iconfont nav-back icon-fanhui1"></a>
+		<span class="iconfont nav-home icon-daohang"></span>
+		<p class="header-title">有货币</p>
+		<div class="header-nav display">
+			<div class="nav-arr"></div>
+			<ul>
+				<li>
+					<a href="index.html"></a>
+					<i class="iconfont"></i>
+					<span>首页</span>
+				</li>
+				<li>
+					<a href="ymCate.html"></a>
+					<i class="iconfont"></i>
+					<span>分类</span>
+				</li>
+				<li>
+					<a href="ymCart.html"></a>
+					<i class="iconfont"></i>
+					<span>购物车</span>
+				</li>
+				<li>
+					<a href=""></a>
+					<i class="iconfont"></i>
+					<span>我的</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="yoho-coin-new-page yoho-page">
+		<div class="coin">
+			<p class="coin-num">0</p>
+			<p class="info">
+				<span class="dollar"></span> 
+				个有货币
+			</p> 
+			<a href="" class="more">查看明细</a>
+		</div>
+	</div>
+	<div class="ad-pic">
+		<div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/logo_icon/ymHome-06.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../img/logo_icon/ymHome-04.jpg" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+	</div>
+</div>
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../js/ymHome.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script>
+// banner
+var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+</script>
+</body>
+</html>
